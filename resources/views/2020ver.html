@@ -1,0 +1,1668 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>DSBDA of CCUMIS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Career Builder Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!-- css links -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="css/facultystyle.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<!-- /css links -->
+<!--  <link href='//fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+ <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+ <link href='//fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800' rel='stylesheet' type='text/css'> -->
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<style type="text/css">
+	html,body,h1,h2,h3,h4,h5{
+		font-family:'Microsoft JhengHei','Heiti TC','sans-serif';
+	}
+	#abgne-block-20120804 {
+		width: 650px;	/* 圖片寬度 + 縮圖寬度 + 間隔 8px */
+		height: 340px;	/* 圖片高度 */
+		padding: 6px 15px;
+		position: relative;
+		border: 1px solid #ccc;
+	}
+	#abgne-block-20120804 ul, #abgne-block-20120804 li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	#abgne-block-20120804 img {
+		border: none;
+	}
+	#abgne-block-20120804 .photo {
+		width: 500px;	/* 圖片寬度 */
+		height: 340px;	/* 圖片高度 */
+		position: absolute;
+	}
+	#abgne-block-20120804 .desc-block {
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		width: 450px;	/* 圖片寬度 */
+		height: 32px;
+	}
+	#abgne-block-20120804 .desc-bg, #abgne-block-20120804 .desc-title {
+		position: absolute;
+		width: 500px;	/* 圖片寬度 - padding * 2 */
+		background: #000;
+		top: 0;
+		height: 24px;
+		padding: 4px 10px;
+	}
+	#abgne-block-20120804 .desc-title {
+		color: #fff;
+		background: none;
+		line-height: 24px;
+	}
+	#abgne-block-20120804 #playPause-btn {	/* 播放/暫停鈕 */
+		position: absolute;
+		display: block;
+		right: 5px;
+		bottom:10px;
+		width: 21px;
+		height: 21px;
+		width: 21px;
+		height: 21px;
+		text-indent: -1200px;
+	}
+	#abgne-block-20120804 .playPause-btn-play {
+		background: url(images/sprite.png) no-repeat -21px 0px;
+	}
+	#abgne-block-20120804 .playPause-btn-pause {
+		background: url(images/sprite.png) no-repeat 0px 0px;
+	}
+	#abgne-block-20120804 .thumbs {
+		width: 104px;
+		height: 330px;	/* 圖片高度 - padding-top */
+		padding-top: 12px;
+		right: 10px;
+		position: absolute;
+	}
+	#abgne-block-20120804 .carousel {
+		height: 310px;
+		position: relative;
+		overflow: hidden;
+	}
+	#abgne-block-20120804 .carousel .nav-bar {
+		float: left;
+		width: 2px;
+		height: 63px;
+		margin-right: 2px;
+	}
+	#abgne-block-20120804 .carousel img {
+		float: left;
+		width: 90px;
+		height: 63px;
+	}
+	#abgne-block-20120804 .carousel ul {
+		position: absolute;
+	}
+	#abgne-block-20120804 .carousel li {
+		width: 94px;
+		height: 72px;
+	}
+	#abgne-block-20120804 .carousel .current .nav-bar {	/* 當被點選時，縮圖左邊的顏色 */
+		background: #007acc;
+	}
+	#abgne-block-20120804 .thumbs .prev, #abgne-block-20120804 .thumbs .next {	/* 縮圖上下的控制鈕 */
+		position: absolute;
+		left: 43px;
+		width: 12px;
+		height: 0px;
+		padding-top: 6px;
+		overflow: hidden;
+		display: block;
+		cursor: pointer;
+		background: url(images/sprite.png) no-repeat 0 0;
+	}
+	#abgne-block-20120804 .thumbs .prev {
+		top: 0px;
+		background-position: 0 -21px;
+	}
+	#abgne-block-20120804 .thumbs .next {
+		bottom: -2px;
+		background-position: 0 -27px;
+	}
+</style>
+<script type="text/javascript">
+	$(function(){
+		// 先一一取得相關的元素及高度
+		var $block = $('#abgne-block-20120804'), 
+			$photo = $block.find('.photo'), 
+			$photoA = $photo.find('a'), 
+			$photoImg = $photoA.find('img'), 
+			$photoDesc = $photoA.find('.desc-title'), 
+			$thumbs = $block.find('.thumbs'), 
+			$carousel = $block.find('.carousel'), 
+			_carouselHeight = $carousel.height(), 
+			$playPauseBtn = $photo.append('<a href="#playPause" class="playPause-btn-pause" id="playPause-btn" title="暫停">暫停</a>').find('#playPause-btn'), 
+			$ul = $thumbs.find('ul'), 
+			$li = $ul.find('li'), 
+			_liHeight = $li.height(), 
+			_set = Math.ceil(_carouselHeight / _liHeight), 
+			_count = Math.ceil($li.length / _set), 
+			_height = _set * _liHeight * -1, 
+			timer, speed = 3000, _animateSpeed = 400, // 分別設定輪播速度及動畫速度
+			_index = 0, _countIndex = 0;
+		
+		// 先在縮圖前面都插入一個 .nav-bar, 主要是當點選到該縮圖時的效果
+		$('<span class="nav-bar"></span>').insertBefore($li.find('img'));
+		// 先讓描述區塊的背景有透明度
+		$block.find('.desc-bg').css('opacity', 0.7);
+		
+		// 如果圖片組數超出一次能顯示的數量時, 產生可以切換的上下鈕
+		var $controls = null;
+		if(_count>1){
+			$controls = $thumbs.append('<a href="#prev" class="prev"></a><a href="#next" class="next"></a>').find('.prev, .next'); 
+			var $prev = $controls.eq(0).hide(), 
+				$next = $controls.eq(1);
+			
+			// 當點擊上下鈕時
+			$controls.click(function(e){
+				// 計算要顯示第幾組
+				_countIndex = Math.floor((e.target.className == 'prev' ? _countIndex - 1 + _count : _countIndex + 1) % _count);
+				
+				// 進行動畫
+				$ul.stop().animate({
+					top: _countIndex * _height
+				}, _animateSpeed);
+				
+				// 判斷上下鈕顯示與否
+				$prev.toggle(_countIndex>0);
+				$next.toggle(_countIndex!=_count-1);
+
+				return false;
+			});
+		}
+		
+		// 如果縮圖 li 被點擊時
+		$li.click(function(){
+			var $this = $(this), 
+				$a = $this.find('a'), 
+				$img = $this.find('img');
+			
+			clearTimeout(timer);
+			_index = $this.index();
+			// 分別改變左邊顯示區塊的超連結, 圖片, alt 及描述內容
+			$photoA.attr('href', $a.attr('href'));
+			$photoImg.attr({
+				src: $img.attr('src'), 
+				alt: $img.attr('alt')
+			});
+			$photoDesc.html($img.attr('alt'));
+			$this.addClass('current').siblings('.current').removeClass('current');
+			
+			// 如果目前的播放鈕並不是在播放樣式時, 就啟動計時器
+			if(!$playPauseBtn.hasClass('playPause-btn-play')) timer = setTimeout(auto, speed + _animateSpeed);
+
+			return false;
+		}).eq(_index).click();
+		
+		// 當播放鈕被點擊時
+		$playPauseBtn.click(function(){
+			// 進行 .playPause-btn-pause 及 .playPause-btn-play 樣式切換
+			var $this = $(this).toggleClass('playPause-btn-pause playPause-btn-play'), 
+				_hasPlay = $this.hasClass('playPause-btn-play'), 
+				_txt = _hasPlay ? '播放' : '暫停';
+			
+			// 如果目前的播放鈕並不是在播放樣式時, 就啟動計時器; 反之則停止計時器
+			if(_hasPlay) clearTimeout(timer);
+			else timer = setTimeout(auto, speed);
+			$this.attr('title', _txt).text(_txt);
+
+			return false;
+		});
+		
+		// 自動輪播使用
+		function auto(){
+			_index = (_index + 1) % $li.length;
+			var $tmp = $li.eq(_index).click();
+
+			var _indexCount = Math.floor(_index / _set);
+			// 判斷是否要切換縮圖的顯示組數
+			if($controls != null && (_index == (_countIndex + 1) * _set || _index == 0) && _countIndex != _indexCount){
+				$next.click();
+				$tmp.animate({opacity: 1}, _animateSpeed, function(){
+					$tmp.addClass('current').siblings('.current').removeClass('current');
+				})
+			}
+		}
+	});
+</script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">DSBDA</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">DSBDA</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#myPage">HOME</a></li>
+				<li><a href="#about">關於我們</a></li>
+				<li><a href="#gallery">實驗室環境</a></li>
+				<li><a href="#faculty">成員介紹</a></li>
+				<li><a href="#events">技術資源</a></li>
+				<li><a href="#footer">聯絡我們</a></li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!-- /Fixed navbar -->	
+	
+<!-- Banner -->
+	<div class="slider">
+		
+			<div  id="top" class="callbacks_container-wrap">
+				<ul class="rslides" id="slider5">
+					<li>
+						<div class="slider1"></div>
+					</li>
+					<li>
+						<div class="slider1 slider2"></div>
+					</li>
+					<li>
+						<div class="slider1 slider3"></div>
+					</li>
+					<li>
+						<div class="slider1 slider4"></div>
+					</li>
+					<li>
+						<div class="slider1 slider5"></div>
+					</li>
+			</div>
+	</div>
+<!-- /Banner -->
+<!-- About -->
+<section id="about">
+	<div class="about">
+	<div class="container">
+		<div class="abouttop">
+			<h3>實驗室主持人</h3>
+			<label class="line"></label>
+			
+			<div class="col-md-6 col-sm-6 aboutmiddle">
+				<div class="aboutleftbottom">
+					<h4>姓名:胡雅涵</h4>
+					<h4>職稱:教授</h4>
+					<h4>學歷:國立中央大學 資訊管理系 博士</h4>
+					<a href="#"  data-toggle="modal" data-target="#myModal">MORE</a>
+			        <!-- Modal -->
+						<div class="modal fade" id="myModal" role="dialog">
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<table border="1" align="left"   >
+										<tr><td ><h4>姓名:胡雅涵</h4></td></tr>
+					                    <tr><td ><h4>職稱:教授</h4></td></tr>
+										<tr><td ><h4>學歷:國立中央大學 資訊管理系 博士</h4></td></tr>
+										<tr><td ><h4>現職:中正大學資訊管理系 教授</h4></td></tr>
+										<tr><td ><h4>研究領域: 資料探勘 醫學資訊 商業智慧 決策支援系統 柔性計算 健保資料庫處理</h4></td></tr>
+										<tr><td ><h4>辦公室:中正大學 管理學院 R613</h4></td></tr>
+										<tr><td ><h4>連絡電話:03-2720311 #33613</h4></td></tr>
+										<tr><td ><h4>電子郵件: yahan.hu@mis.ccu.edu.tw</h4></td></tr>
+										<tr><td ><img height='744px' width='512px' src="images/pfp.jpg"></td></tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="aboutmiddlebottom">
+					<h4>姓名:李珮如</h4>
+					<h4>職稱:副教授</h4>
+					<h4>學歷:美國匹茲堡大學 資訊科學 博士</h4>
+					<a href="#"  data-toggle="modal" data-target="#myModal1">MORE</a>
+			        <!-- Modal -->
+						<div class="modal fade" id="myModal1" role="dialog">
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<table border="1" align="medium"   >
+										<tr><td ><h4>姓名:李珮如</h4></td></tr>
+					                    <tr><td ><h4>職稱:助理教授</h4></td></tr>
+										<tr><td ><h4>學歷:美國匹茲堡大學 資訊科學 博士</h4></td></tr>
+										<tr><td ><h4>現職:中正大學資訊管理系 教授</h4></td></tr>
+										<tr><td ><h4>研究領域: 資料融合 資料探勘 資料庫管理 人機互動 人因工程</h4></td></tr>
+										<tr><td ><h4>辦公室:中正大學 管理學院 R622</h4></td></tr>
+										<tr><td ><h4>連絡電話:03-2720311 #33622</h4></td></tr>
+										<tr><td ><h4>電子郵件: pjlee@mis.ccu.edu.tw</h4></td></tr>
+										<tr><td ><img  src="images/pfp1.jpg"></td></tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="aboutrightbottom">
+				<h4>姓名:林育秀</h4>
+			    <h4>職稱:助理教授</h4>
+				<h4>學歷:美國南卡羅來納大學 醫療政策與管理 博士</h4>
+				<a href="#"  data-toggle="modal" data-target="#myModal2">MORE</a>
+			        <!-- Modal -->
+						<div class="modal fade" id="myModal2" role="dialog">
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<table border="1" align="left"   >
+										<tr><td ><h4>姓名:林育秀</h4></td></tr>
+					                    <tr><td ><h4>職稱:助理教授</h4></td></tr>
+										<tr><td ><h4><h4>學歷:美國南卡羅來納大學 醫療政策與管理 博士</h4></td></tr>
+										<tr><td ><h4><h4>現職:中正大學資訊管理系 教授</h4></td></tr>
+										<tr><td ><h4><h4>研究領域: 老人健康生活品質評估 健康空間計量分析 偏鄉地區老人健康研究 長期照護供需及分布 醫療大數據分析</h4></td></tr>
+										<tr><td ><h4><h4>辦公室:中正大學 管理學院 R614</h4></td></tr>
+										<tr><td ><h4><h4>連絡電話:03-2720311 #34614 </h4></td></tr>
+										<tr><td ><h4><h4>電子郵件: yuhsiu@ccu.edu.tw </h4></td></tr>
+										<tr><td ><h4><img  src="images/pfp2.jpg"></td></tr>
+										</table>"></td></tr>
+										</table>
+										</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<img src="images/bb3.jpg">
+			</div>
+			<div class="clearfix"></div>
+		</div>	
+	</div>	
+</div>
+
+</section>
+<!-- /About -->
+<!-- Gallery Section -->
+<div class="gallery" id="gallery">
+	<div class="container">
+	    <h3>實驗室環境</h3>
+		<label class="line"></label>
+		<section id="gallery" class="parallax section">
+		
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 ggrids">
+							<a href="images/big1.jpg" title="陽光照下的實驗室大門">
+							<img src="images/1.jpg">
+								<div class="description">
+									<span class="caption">實驗室大門</span> 
+									<span class="camera"></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>			
+						<div class="col-md-4 col-sm-4 ggrids">
+							<a href="images/big2.jpg" title="從另外一個角度來看">
+							<img src="images/2.jpg">
+								<div class="description">
+									<span class="caption">實驗室大門</span> 
+									<span class="camera"></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 ggrids">
+							<a href="images/big3.jpg" title="進去之後就是大家要一起相處兩年的實驗室">
+							<img src="images/3.jpg">
+								<div class="description">
+									<span class="caption">實驗室大門進入後</span> 
+									<span class="camera"></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 ggrids">
+							<a href="images/big4.jpg" title="大家可以一起坐在大桌子那吃飯聊天增進彼此的友誼">
+							<img src="images/4.jpg">
+								<div class="description">
+									<span class="caption">實驗室內的交流桌</span> 
+									<span class="camera"></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 ggrids">
+							<a href="images/big5.jpg" title="寬敞又舒適的個人位子，加入我們的lab挑一個自己的位子吧">
+							<img src="images/5.jpg">
+								<div class="description">
+									<span class="caption">各自擁有舒適寬敞的位子</span> 
+									<span class="camera"></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 ggrids">
+							<a href="images/big6.jpg" title="每個人都有自己的電腦設備可以做自己的事情">
+							<img src="images/6.jpg">
+								<div class="description">
+									<span class="caption">大家都有配備一台個人電腦</span> 
+									<span class="camera"></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+					</div>	
+				</div>
+	</div>
+</div>
+<!-- //Gallery Section -->
+<!-- Faculty Section -->
+<div class="faculty" id="faculty">
+	<div class="container">
+	    <div class="ftop">
+		    <h3>lab成員</h3>
+			<label class="line"></label>
+	    </div>
+		<!--
+        <div class="col-md-3 col-sm-3 fgrids">
+		 	<div class="ftext" style="center" >
+				<h4>李冠霖</h4>
+				<label class="fline"></label>
+				<h4>系級:106</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Nick</h4>
+				<h4>專長:R,Java</h4>
+				<h4>信箱:ftps945504@gmail.com</h4>
+			</div>
+		</div>
+	    <div class="col-md-3 col-sm-3 fgrids">
+			<div class="ftext" style="center" >
+				<h4>何松庭</h4>
+				<label class="fline"></label>
+				<h4>系級:106</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Stan</h4>
+				<h4>專長:Java,Andriod,Swift</h4>
+				<h4>信箱:a73822837@gmail.com</h4>
+			</div>
+	    </div>
+	    <div class="col-md-3 col-sm-3 fgrids">
+	      	<div class="ftext" style="center" >
+				<h4>陳彥竹</h4>
+				<label class="fline"></label>
+				<h4>系級:106</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Rick</h4>
+				<h4>專長:C++,Java,Android</h4>
+				<h4>信箱:54rick45@gmail.com</h4>
+			</div>
+	    </div>
+	   <div class="col-md-3 col-sm-3 fgrids">
+	      	<div class="ftext" style="center" >
+				<h4>高毓萱</h4>
+				<label class="fline"></label>
+				<h4>系級:106</h4>
+				<h4>醫管二年級</h4>
+				<h4>英文名:Michelle</h4>
+				<h4>專長:</h4>
+				<h4>信箱:kaohsuan21@gmail.com</h4>
+			</div>
+	    </div>
+		<hr  width="0px" >
+		<div class="col-md-3 col-sm-3 fgrids">
+	     	<div class="ftext" style="center" >
+				<h4>劉彥煒</h4>
+				<label class="fline"></label>
+				<h4>系級:106</h4>
+				<h4>醫管二年級</h4>
+				<h4>英文名:Jason</h4>
+				<h4>專長:PHP,Java,html</h4>
+				<h4>信箱:liu840407@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	      	<div class="ftext" style="center" >
+				<h4>盧薏安</h4>
+				<label class="fline"></label>
+				<h4>系級:106</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Annie</h4>
+				<h4>專長:Java, Android</h4>
+				<h4>信箱:A10423006@yuntech.org.tw</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>張琬堉</h4>
+				<label class="fline"></label>
+				<h4>系級:106</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Jean</h4>
+				<h4>專長:C++, Java</h4>
+				<h4>信箱:nk042819@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>趙竟評</h4>
+				<label class="fline"></label>
+				<h4>系級:106</h4>
+				<h4>醫管二年級</h4>
+				<h4>英文名:Vincent</h4>
+				<h4>專長:php,Java,html</h4>
+				<h4>信箱:s6951435@gmail.com</h4>
+			</div>
+	    </div>   -->
+			<hr  width="0px" >
+		<div class="col-md-3 col-sm-3 fgrids">
+	        	<div class="ftext" style="center" >
+				<h4>史翼彰</h4>
+				<label class="fline"></label>
+				<h4>系級:107</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Yves</h4>
+				<h4>專長:SAS,R</h4>
+				<h4>信箱:hello811020@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>劉俐麟</h4>
+				<label class="fline"></label>
+				<h4>系級:107</h4>
+				<h4>醫管二年級</h4>
+				<h4>英文名:Linda</h4>
+				<h4>專長:HTML,CSS</h4>
+				<h4>信箱:stepbystep1205@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>林妤庭</h4>
+				<label class="fline"></label>
+				<h4>系級:107</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Linda</h4>
+				<h4>專長:</h4>
+				<h4>信箱:leilin6727@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	        <div class="ftext" style="center" >
+				<h4>葉凡君</h4>
+				<label class="fline"></label>
+				<h4>系級:107</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Tina</h4>
+				<h4>專長:Java,php</h4>
+				<h4>信箱:yeahyeah0606@gmail.com</h4>
+			</div>
+	    </div>
+			<hr  width="0px" >
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>李沛蓁</h4>
+				<label class="fline"></label>
+				<h4>系級:107</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Peichen</h4>
+				<h4>專長:Java,HTML,CSS</h4>
+				<h4>信箱:peichenlee1030@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	      	<div class="ftext" style="center" >
+				<h4>呂姿鈴</h4>
+				<label class="fline"></label>
+				<h4>系級:107</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Claire</h4>
+				<h4>專長:</h4>
+				<h4>信箱:daily122716@alum.ccu.edu.tw</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>李佳穎</h4>
+				<label class="fline"></label>
+				<h4>系級:107</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Kelly</h4>
+				<h4>專長:C#,HTML,SQL</h4>
+				<h4>信箱:kelly0809036@gmail.com	</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	      	<div class="ftext" style="center" >
+				<h4>李育愷</h4>
+				<label class="fline"></label>
+				<h4>系級:107</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Forjes</h4>
+				<h4>專長:C,Java</h4>
+				<h4>信箱:icemake0408@gmail.com</h4>
+			</div>
+	    </div>
+			<hr  width="0px" >
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>郭瑜真</h4>
+				<label class="fline"></label>
+				<h4>系級:107</h4>
+				<h4>資管二年級</h4>
+				<h4>英文名:Evonne</h4>
+				<h4>專長:Java,php,HTML,CSS</h4>
+				<h4>信箱:zcn147253@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>潘如秋</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>資管一年級</h4>
+				<h4>英文名:Ruth</h4>
+				<h4>專長:HTML,CSS</h4>
+				<h4>信箱:choupan089@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>陳曼欣</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>醫管一年級</h4>
+				<h4>英文名:Mandy</h4>
+				<h4>專長:</h4>
+				<h4>信箱:m504541422@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>潘振卿</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>資管一年級</h4>
+				<h4>英文名:Eric</h4>
+				<h4>專長:HTML,CSS</h4>
+				<h4>信箱:panching825@gmail.com</h4>
+			</div>
+	    </div>
+		<hr  width="0px" >
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>林玲蓉</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>醫資一年級</h4>
+				<h4>英文名:Carol</h4>
+				<h4>專長:Java,SQL,Unity</h4>
+				<h4>信箱:caroltail110204@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>郭庭維</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>資管一年級</h4>
+				<h4>英文名:Geannie</h4>
+				<h4>專長:Java,Android</h4>
+				<h4>信箱:berrypie.wei@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>詹惠婷</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>資管一年級</h4>
+				<h4>英文名:Doris</h4>
+				<h4>專長:Java,Python</h4>
+				<h4>信箱:doris10152016@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>蔡卓庭</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>資管一年級</h4>
+				<h4>英文名:Joe</h4>
+				<h4>專長:Java,C,SQL</h4>
+				<h4>信箱:joe51151108@gmail.com</h4>
+			</div>
+	    </div>
+		<hr  width="0px" >
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>陳貞樺</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>資管一年級</h4>
+				<h4>英文名:Jane</h4>
+				<h4>專長:MATLAB,PHP,Wordpress</h4>
+				<h4>信箱:jen850909@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>黃資昂</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>前瞻製造一年級</h4>
+				<h4>英文名:Nick</h4>
+				<h4>專長:C#,Python,Flexsim</h4>
+				<h4>信箱:608445003ccu@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>史博先</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>資管一年級</h4>
+				<h4>英文名:Barry</h4>
+				<h4>專長:Java,Android,AWS</h4>
+				<h4>信箱:index50710@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>楊雅婷</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>資管一年級</h4>
+				<h4>英文名:Raina</h4>
+				<h4>專長:C++,php,SQL</h4>
+				<h4>信箱:Raina0229@gmail.com</h4>
+			</div>
+	    </div>
+		<hr  width="0px" >
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>游程傑</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>資管一年級</h4>
+				<h4>英文名:Duck</h4>
+				<h4>專長:C++,python</h4>
+				<h4>信箱:yseyableach@yahoo.com.tw</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>李奇鴻</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>醫資一年級</h4>
+				<h4>英文名:Kevin</h4>
+				<h4>專長:C,Java</h4>
+				<h4>信箱:decadehope0604@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>謝雨錡</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>資管一年級</h4>
+				<h4>英文名:Ariel</h4>
+				<h4>專長:C#,Python,SQL</h4>
+				<h4>信箱:ych60819@gmail.com</h4>
+			</div>
+	    </div>
+		<div class="col-md-3 col-sm-3 fgrids">
+	       	<div class="ftext" style="center" >
+				<h4>曾怡樺</h4>
+				<label class="fline"></label>
+				<h4>系級:108</h4>
+				<h4>資管一年級</h4>
+				<h4>英文名:Winnie</h4>
+				<h4>專長:Java,php,SQL</h4>
+				<h4>信箱:yihua2486@gmail.com</h4>
+			</div>
+	    </div>
+	    <div class="clearfix"></div>
+    </div>
+</div>
+<!-- //Faculty Section -->
+
+<!-- Stats Section -->
+<div class="stats" id="stats">
+	<div class="container">
+		<h3>活動照片</h3>
+		<label class="line"></label>
+	<div id="abgne-block-20120804" style ="position:absolute;right:30%;">
+		<div class="photo">
+			<a href="#">
+				<img src="images/slide1.jpg" alt="第一張圖片">
+				<div class="desc-block">
+					<div class="desc-bg"></div>
+					<div class="desc-title">Lab小聚餐</div>
+				</div>
+			</a>
+		</div>
+		<div class="thumbs">
+			<div class="carousel">
+				<ul>
+					<li><a href="#"><img src="images/slide1.JPG" alt="Lab小聚餐" title="Lab小聚餐"></a></li>
+					<li><a href="#"><img src="images/slide2.JPG" alt="2019年終尾牙" title="2019年終尾牙"></a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+    </div>
+</div>
+<!-- Stats Section -->
+<!-- Events Section -->
+<div class="events" id="events">
+	<div class="container">
+        <h3>技術資源</h3>
+        <label class="line"></label>
+        <div class="col-md-6 col-sm-6 egrid">
+		    <div class="textt">
+			    <h3>研究成果</h3>
+				<label class="eline"></label>
+				<h3>胡雅涵老師</h3> 
+				<a href="#" data-toggle="modal" data-target="#myModal5">期刊論文</a>
+				<a href="#" data-toggle="modal" data-target="#myModal6">會議論文</a>
+				<h3>李珮如老師</h3> 
+				<a href="#" data-toggle="modal" data-target="#myModal7">期刊論文</a>
+				<a href="#" data-toggle="modal" data-target="#myModal8">會議論文</a>
+				<h3>林育秀老師</h3> 
+				<a href="#" data-toggle="modal" data-target="#myModal37">期刊論文</a>
+				<a href="#" data-toggle="modal" data-target="#myModal38">會議論文</a>
+				
+<!-- 雅涵期刊論文 -->
+				<!-- Modal -->
+				<div class="modal fade" id="myModal5" role="dialog">
+					<div class="modal-dialog">					
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4>★ 2019 ★</h4>
+								<p>&#8226; Ya-Han Hu*, Yi-Lien Lee, Ming-Feng Kang, Pei-Ju Lee, Constructing Inpatient Pressure Injury Prediction Models Using Machine Learning Techniques, CIN: Computers, Informatics, Nursing, accepted, 2019. (SSCI)</p>
+								   &#8226; Jiann-Der Lee, Tsong-Hai Lee, Yen-Chu Huang, Meng Lee, Ya-Wen Kuo, Ya-Chi Huang, and Ya-Han Hu*, Prediction Model of Early Return to Hospital after Discharge Following Acute Ischemic Stroke, Current Neurovascular Research, 2019, 16, 1-11. (SCI)</p>
+								   &#8226; 李珮如、胡雅涵*、李彥賢、吳俊霆，運用資料探勘技術預測分析持續互動性高之粉絲團：以臉書醫療健康粉絲團為例，電子商務學報，已接受。(TSSCI)</p>
+								   &#8226; Chih-Fong Tsai, Wei-Chao Lin, Ya-Han Hu*, and Guan-Ting Yao, Under-Sampling Class Imbalanced Datasets by Combining Clustering Analysis and Instance Selection, Information Sciences, 477 (2019) 47-54 (SCI; IF=4.305; 12/148 in COMPUTER SCIENCE, INFORMATION SYSTEMS)</p>
+								</p>
+								<h4>★ 2018 ★</h4>
+								<p>&#8226; Ya-Han Hu*, Wen-Ming Shiau, Sheng-Pao Shih, Cho-Ju Chen, (2018) Considering online consumer reviews to predict movie box-office performance between the years 2009 and 2014 in the US, The Electronic Library, 36 (6) (2018) 1010-1026. (SSCI)</p>
+								   &#8226; Ya-Han Hu*, Chun-Tien Tai, Chih-Fong Tsai, and Min-Wei Huang, Improvement of Adequate Digoxin Dosage: An Application of Machine Learning Approach, Journal of Healthcare Engineering, vol. 2018, Article ID 3948245, 9 pages, 2018. (SCI)</p>
+								   &#8226; Chia-Mei Chang, Jeng-Hsiu Hung, Ya-Han Hu*, Pei-Ju Lee, Cheng-Che Shen*, Prediction of Preoperative Blood Preparation for Orthopedic Surgery Patients: A Supervised Learning Approach, Applied Science, 8(9), 1559, 2018, https://doi.org/10.3390/app8091559. (SCI)</p>
+								   &#8226; Chia-Hui Liu, Cheng-Jyun Lin, Ya-Han Hu*, Zi-Hung You, Predicting the Failure of Dental Implants Using Supervised Learning Techniques, Applied Science, 8(5), 698, 2018, doi:10.3390/app8050698. (SCI)</p>
+								   &#8226; Cheng-Che Shen, Li-Yu Hu, Shih-Jen Tsai, Albert C. Yang, Ya-Han Hu*, Risk Stratification for the Early Diagnosis of Borderline Personality Disorder Using Psychiatric Comorbidities, Early Intervention in Psychiatry, 12 (4) (2018) 605-612. (SSCI)</p>
+								   &#8226; Mao-Te Chuang, Ya-Han Hu*, Chia-Lun Lo, Predicting the Prolonged Length of Stay of General Surgery Patients: A Supervised Learning Approach, International Transactions in Operational Research, 25 (1) (2018) 75-90. (MOST 104-2410-H-194-070-MY3) (SSCI) </p>
+								   &#8226; Pei-Ju Lee, Ya-Han Hu*, Kuan-Ting Lu, Assessing the helpfulness of online hotel reviews: A classification-based approach, Telematics and Informatics, 35 (2), (2018), 436-445. (MOST 104-2410-H-194-070-MY3) (SSCI) </p>
+								   &#8226; Sheng-Feng Sung, Kuanchin Chen, Darren Philbert Wu, Ling-Chien Hung, Yu-Hsiang Su, Ya-Han Hu*, Applying natural language processing techniques to develop a task-specific EMR interface for timely stroke thrombolysis: A feasibility study, International Journal of Medical Informatics, 112 (2018) 149-157. (MOST 105-2314-B-705-001) (SCI)</p>
+								<h4>★ 2017 ★</h4>
+								<p>&#8226; Ya-Han Hu*, Yen-Liang Chen, Hui-Ling Chou, Opinion mining from online hotel reviews - A text summarization approach, Information Processing & Management, 53 (2) (2017) 436-449. (SSCI)</p>
+								&#8226; Cheng-Yang Hsieh, Huey-Juan Lin, Ya-Han Hu*, Sheng-Feng Sung, Stroke severity may predict causes of readmission within one year in patients with first ischemic stroke event, Journal of the Neurological Sciences, 372 (2017) 21-27. (SCI)</p>
+								&#8226; Ya-Han Hu, Kuanchin Chen, Pei-Ju Lee, The Effect of User Controllable Filters on the Prediction of Online Hotel Reviews, Information & Management, 54 (6) (2017) 728-744. (MOST 104-2410-H-194-070-MY3) (SSCI)</p>
+								&#8226; Lin, W.-C., Tsai, C.-F.*, Ya-Han Hu, and Jing-Shang Jhang, Clustering-Based Undersampling for Class-imbalanced Data. Information Sciences, 409-410 (2017) 17-26. (SCI; IF=3.364; 8/144 in Computer Science, Information Systems)</p>
+								&#8226;	Li-Chen Cheng, Ya-Han Hu*, Shr-Han Chiou, Applying the temporal abstraction technique to the prediction of chronic kidney disease progression, Journal of Medical Systems, 41 (2017) 85. (SCI)</p>
+								&#8226; Ya-Han Hu, Chun-Tien Tai, Solomon Chih-Cheng Chen, Hai-Wei Lee, Sheng-Feng Sung*, Predicting Return Visits to the Emergency Department for Pediatric Patients: Applying Supervised Learning Techniques to the Taiwan National Health Insurance Research Database, Computer Methods and Programs in Biomedicine, 144 (2017) 105-112. (SCI)</p>
+								&#8226;	Ling-Chien Hung, Sheng-Feng Sung, Cheng-Yang Hsieh, Ya-Han Hu, Huey-Juan Lin, Yu-Wei Chen, Yea-Huei Kao Yang, Sue-Jane Lin. Validation of a Novel Claims-Based Stroke Severity Index in Patients with Intracerebral Hemorrhage, Journal of Epidemiology, 27 (1) (2017) 24-29. (SCI)</p>
+								&#8226; Fan Wu, Ya-Han Hu*, Ping-Rong Wang, Developing a Novel Recommender Network-Based Ranking Mechanism for Library Book Acquisition, The Electronic Library, 35 (1) (2017) 50-68. (MOST 104-2410-H-194-070-MY3) (SSCI) </p>
+								&#8226; Cheng-Che Shen, Li-Yu Hu, Ya-Han Hu*, Comorbidity study of borderline personality disorder: applying association rule mining to the Taiwan national health insurance research database, BMC Medical Informatics and Decision Making, 17 (1) (2017) 8. (SCI/SSCI) </p>
+								&#8226; Ke, S.-W., Lin, W.-C.*, Tsai, C.-F., and Ya-Han Hu (2017) Soft Estimation by Hierarchical Classification and Regression, 234 (2017/4) 27-37. Neurocomputing. (SCI)</p>
+								<h4>★ 2016 ★</h4>
+								<p>&#8226; Ya-Han Hu*, Kuanchin Chen, Predicting hotel review helpfulness: the impact of review visibility, and interaction between hotel stars and review ratings, International Journal of Information Management, 36 (6) (2016) 929-944. (SSCI; IF=2.692; 8/86 in INFORMATION SCIENCE & LIBRARY SCIENCE)</p>
+								&#8226; Ya-Han Hu*, Kuanchin Chen, Pei-Ju Lee, The Effect of User Controllable Filters on the Prediction of Online Hotel Reviews, Information & Management, accepted. (SSCI)</p>
+								&#8226; Cheng-Che Shen, Li-Yu Hu, Shih-Jen Tsai, Albert C. Yang, Ya-Han Hu*, Risk Stratification for the Early Diagnosis of Borderline Personality Disorder Using Psychiatric Comorbidities, Early Intervention in Psychiatry, accepted. (SSCI)</p>
+								&#8226; Fan Wu, Ya-Han Hu*, Ping-Rong Wang, Developing a Novel Recommender Network-Based Ranking Mechanism for Library Book Acquisition, The Electronic Library, (2016), accepted. (SSCI)</p>
+								&#8226; Ling-Chien Hung, Sheng-Feng Sung, Cheng-Yang Hsieh, Ya-Han Hu, Huey-Juan Lin, Yu-Wei Chen, Yea-Huei Kao Yang, Sue-Jane Lin. Validation of a Novel Claims-Based Stroke Severity Index in Patients with Intracerebral Hemorrhage, Journal of Epidemiology, accepted. (SCI)</p>
+								&#8226; Mao-Te Chuang, Ya-Han Hu, Chia-Lun Lo*, Predicting the Prolonged Length of Stay of General Surgery Patients: A Supervised Learning Approach, International Transactions in Operational Research, accepted. (SSCI)</p>
+								&#8226; Cheng-Yang Hsieh, Huey-Juan Lin, Ya-Han Hu, Sheng-Feng Sung, Stroke severity may predict causes of readmission within one year in patients with first ischemic stroke event, Journal of the Neurological Sciences, 372 (2017) 21-27. (SCI)</p>
+								&#8226; Sung, S. F., Hsieh, C. Y., Lin, H. J., Chen, Y. W., Chen, C. H., Kao Yang, Y. H., & Ya-Han Hu*. Validity of a stroke severity index for administrative claims data research: a retrospective cohort study. BMC Health Services Research, 16:509. (SCI)</p>
+								&#8226; 胡雅涵、翁政雄*、楊亞澄，運用關聯規則及改變探勘技術於防火牆政策規則優化，資訊管理學報，23 (3) (2016) 277-304。(2016) (TSSCI)</p>
+								&#8226; Shen, C.-C., Ya-Han Hu, Lin, W.-C., Tsai, C.-F.*, and Ke, S.-W. Research Impacts of General and Funded Papers: A Citation Analysis of Two ACM International Conference Proceeding Series. Online Information Review, 40 (4) (2016) 472-480. (SSCI)</p>
+								&#8226; Ti Lu, Ya-Han Hu*, Chih-Fong Tsai, Shih-Ping Liu, Pei-Ling Chen, Applying Machine Learning Techniques to the Identification of Late-Onset Hypogonadism in Elderly Men, SpringerPlus, 5 (2016) 729. (SCI)</p>
+								&#8226; Sheng-Feng Sung, Solomon Chih-Cheng Chen, Cheng-Yang Hsieh, Chung-Yi Li, Edward Chia-Cheng Lai, Ya-Han Hu*, A comparison of stroke severity proxy measures for claims data research: A population-based cohort study, Pharmacoepidemiology and Drug Safety, 25 (2016) 438-443. (SCI)</p>
+								&#8226; Li-Yu Hu, Ya-Han Hu, Chih-Fong Tsai, Jian-Shian Wang, Min-Wei Huang*, Building an associative classifier with multiple minimum supports, SpringerPlus, 5 (2016) 528. (SCI)</p>
+								<h4>★ 2015 ★</h4>
+								<p>&#8226; Chih-Fong Tsai, Ya-Han Hu*, and Yu-Hsin Lu, Customer segmentation issues and strategies for an automobile dealership with two clustering techniques, Expert Systems, 2014, accepted. (SCI)</p>
+								&#8226; Chih-Fong Tsai, Ya-Han Hu, and Zong-Yao Chen, Factors Affecting Rocchio Based Pseudo Relevance Feedback in Image Retrieval. Journal of the American Society for Information Science and Technology, 2014, accepted. (SSCI)</p>
+								&#8226; Ya-Han Hu*, Chih-Fong Tsai, Chun-Tien Tai, In-Chi Chiang, A novel approach for mining cyclically repeated patterns with multiple minimum supports, Applied Soft Computing, 28 (2015) 90-99. (SCI)</p>
+								&#8226; Ya-Han Hu, WC Lin, CF Tsai, SW Ke, CW Chen, An efficient data preprocessing approach for large scale medical data mining, Technology and Health Care, 23 (2015) 153-160. (SCI)</p>
+								&#8226; 胡雅涵、李彥賢、林正賢，結合社會性標籤及文獻內容於個人化學術文章推薦，資訊管理學報，22 (2) (2015) 171-198。(TSSCI) (NSC 102-2410-H-194-104-MY2)</p>
+								&#8226; Kuanchin Chen, Ya-Han Hu*, and Yi-Cheng Hsieh, Predicting Customer Churn from Valuable B2B Customers in Logistic Industry: A case study, Information Systems and e-Business Management, 13 (3) (2015) 475-494. (SSCI)</p>
+								&#8226; Chen, C.-W., Lin, W.-C., Ke, S.-W., Tsai, C.-F.*, and Ya-Han Hu. On Mining Incomplete Medical Datasets: Ordering Imputation and Classification. Technology and Health Care, 23 (2015) 619-625. (SCI)</p>
+								&#8226; Ling-Chien Hung, Ya-Han Hu and Sheng-Feng Sung, Exploring the impact of intravenous thrombolysis on length of stay for acute ischemic stroke: a retrospective cohort study, BMC Health Services Research, 15:404 (2015). (SCI)</p>
+								&#8226; Sung, S. F., Hsieh, C. Y., Yang, Y. H. K., Lin, H. J., Chen, C. H., Chen, Y. W., & Ya-Han Hu*. Developing a stroke severity index based on administrative data was feasible using data mining techniques. Journal of Clinical Epidemiology, 68 (2015) 1292-1300. (SCI)</p>
+								&#8226; Sheng-Feng Sung, Kang Ernest Liu, Solomon Chih-Cheng Chen, Chia-Lun Lo, Kuei-Chih Lin, Ya-Han Hu*, Predicting Factors and Risk Stratification for Return Visits in Children to the Emergency Department within 72 Hours, Pediatric Emergency Care, 31 (12) (2015) 819-824. (SCI)</p>
+								<h4>★ 2014 ★</h4>
+								<p>&#8226; 謝宛芷、胡雅涵，運用文字探勘技術於資安事件之自動化分類，電腦稽核，29 (2014) 92-101。</p>
+								&#8226; Kang Ernest Liu, Chia-Lun Lo, Ya-Han Hu*, Improvement of adequate use of warfarin for the elderly using decision tree-based approaches, Methods of Information in Medicine, 52 (6) (2014). (SCI) (NSC 99-2410-H-194-065)</P>
+								&#8226; Ya-Han Hu*, Tzu-Wei Yeh, Discovering valuable frequent patterns based on RFM analysis without customer identification information, Knowledge-Based Systems, 61 (2014) 76-88. (SCI)</p>
+								&#8226; Ya-Han Hu, Chia-Lun Lo, Sheng-Pao Shih*, Developing early warning systems to predict students' online learning performance, Computers in Human Behavior, 36 (2014) 469-478. (SSCI)</p>
+								&#8226; Hsu-Che Wu, Ya-Han Hu*, Yen-Hao Huang, Two-stage credit rating prediction using machine learning techniques, Kybernetes, 43 (7) (2014) 1098-1113. (SCI)</p>
+								&#8226; Chih-Fong Tsai, Ya-Han Hu, and Ke, S.-W. (2014) A Borda Count Approach to Combine Subjective and Objective based MIS Journal Rankings. Online Information Review, 38 (4) (2014) 469-483. (SSCI)</p>
+								&#8226; 胡雅涵、黃正魁、楊承翰，以基因演算法為基礎建立自動化文件分類模式，資訊管理學報，21 (3) (2014) 305-340。(TSSCI)</p>
+								&#8226; Ke, S.-W., Lin, W.-C., Tsai, C.-F., and Ya-Han Hu (2014) Citation Impact Analysis of Research Papers that Appear in Oral and Poster Sessions: A Case Study of Three Computer Science Conferences. Online Information Review, 38 (6) (2014) 738-745. (SSCI)</p>
+								&#8226; Man-Ling Chen, Zhi-Yuan Su, Chia-Lun Lo, Chiung-Hsuan Chiu, Ya-Han Hu, Tien-Yu Shieh, An empirical study on the factors influencing the turnover intention of dentists in hospitals in Taiwan, Journal of Dental Sciences, 9 (4) (2014) 332-344. (SCI)</p>
+								<h4>★ 2013 ★</h4>
+								<p>&#8226; Shin-Yuan Hung, Ya-Han Hu, Chin-S. Ou, Kuanchin Chen, Chun-Chuan Lu, The Influence of IT Investment on Business Performance: A Comparative Study of Regression Analysis and Artificial Neural Networks, Pacific Asia Journal of the Association for Information Systems, accepted, 2013.</p>
+								&#8226; Man-Ling Chen, Zhi-Yuan Su, Chia-Lun Lo, Chiung-Hsuan Chiu, Ya-Han Hu, Tien-Yu Shieh, An empirical study on the factors influencing the turnover intention of dentists in hospitals in Taiwan, Journal of Dental Sciences, accepted (2013). (SCI)</p>
+								&#8226; 羅家倫、胡雅涵、吳帆，以全人觀點設計一個之機構式老人照護資訊管理系統，醫療資訊雜誌，已接受，(2013)。
+Ya-Han Hu, Fan Wu, Yi-Jiun Liao, An efficient tree-based algorithm for mining sequential patterns with multiple minimum supports, Journal of Systems and Software, 86 (5) (2013) 1224-1238. (SCI) (NSC 98-2410-H-194-054)</P>
+								&#8226; Ya-Han Hu, Tony Cheng-Kui Huang, Yu-Hua Kao, Knowledge discovery of weighted RFM sequential patterns from customer sequence databases, Journal of Systems and Software, 86 (3) (2013) 779-788. (SCI) (NSC 100-2410-H-194-024-MY2)</P>
+								&#8226; F. Wu, H-T. Pai, X. Zhu, P-Y. Hsueh, Ya-Han Hu, An Adaptable and Scalable Group Access Control Scheme for Managing Wireless Sensor Networks, Telematics and Informatics, 30 (2) (2013) 144-157. (SSCI)</P>
+								&#8226; Chih-Fong Tsai, Ya-Han Hu, Chia-Sheng Hung, Yu-Feng Hsu, A Comparative Study of Hybrid Machine Learning Techniques for Customer Lifetime Value Prediction, Kybernetes, 42 (3) (2013) 357-370. (SCI)</P>
+								<h4>★ 2012 ★</h4>
+								<p>&#8226; Ya-Han Hu, Chia-Lun Lo, Feng-I Chung, Applying RFM Analysis to Library-Book Recommender Systems, Communications of ICISA, 13 (2) (2012) 79-95.</p>
+								&#8226; Ya-Han Hu, Fan Wu*, Chia-Lun Lo, Chun-Tien Tai, Predicting Warfarin Dosage from Clinical Data: A Supervised Learning Approach, Artificial Intelligence in Medicine, 56 (1) (2012) 27-34. (SCI) (NSC 98-2410-H-194-054)</p>
+								&#8226; W.-Y. Lin, Ya-Han Hu, and C.-F. Tsai*, Machine Learning in Financial Crisis Prediction: A Survey. IEEE Transactions on Systems, Man and Cybernetics – Part C, 42 (4) (2012) 421-436. (SCI, SSCI)</p>
+								<h4>★ 2009 ★</h4>
+								<p>&#8226; Ya-Han Hu, Yen-Liang Chen*, and Kwei Tang, Sequential Pattern Mining in Business-to-Business (B2B) Environment, Journal of Information Science, 35 (6) (2009) 677-694. (SSCI).</p>
+								&#8226; Ya-Han Hu, Tony Cheng-Kui Huang*, Hui-Ru Yang, and Yen-Liang Chen, On Mining Multi-Time-Interval Sequential Patterns, Data and Knowledge Engineering, 68 (10) (2009) 1112-1127. (SCI) (NSC 97-2410-H-309 -020)</P>
+								<h4>★ 2006 ★</h4>
+								<p>&#8226; Ya-Han Hu and Yen-Liang Chen* (2006), Mining association rules with multiple minimum supports: a new mining algorithm and a support tuning mechanism, Decision Support Systems, 42 (1) 1-24. (SCI)</p>
+                                   &#8226; Yen-Liang Chen* and Ya-Han Hu (2006), Constraint-based sequential pattern mining: The consideration of recency and compactness, Decision Support Systems, 42 (2) 1203-1215. (SCI)</p>
+                                   &#8226; Yen-Liang Chen*, Jhong-Jhih Wei, Shin-Yi Wu, and Ya-Han Hu (2006), A similarity-based method for retrieving documents from the SCI/SSCI database, Journal of Information Science, 32 (5) 449-464. (SSCI)</p>
+                                <h4>★ 2005 ★</h4>
+								<p>&#8226; Yen-Liang Chen*, Kwei Tang, Ren-Jie Shen and Ya-Han Hu (2005), Market basket analysis in a multiple store environment, Decision Support Systems, 40 (2) 339-354. (SCI)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+<!-- 雅涵會議論文 -->				
+				<div class="modal fade" id="myModal6" role="dialog">
+					<div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4>★ 2017 ★</h4>
+								<p>&#8226; Yen-Hsien Lee, Ya-Han Hu, WanChih Hsieh and Pei-Ju Lee, Subject-relevant Document Recommendation: A Reference Topic-Based Approach, The 21st Pacific Asia Conference on Information Systems (PACIS 2017), Langkawi, 2017.</p>
+									&#8226; Tsai, C.-F., Ya-Han Hu, Lin, W.-C., and Wang, M.-C. (2017) Early versus Late Dimensionality Reduction of Bag-of-Words Feature Representation for Image Classification. International Conference on Bioinformatics Research and Applications, Barcelona, Spain, Dec. 8-10.</p>
+								<h4>★ 2016 ★</h4>
+								<p> &#8226; Ya-Han Hu, Pei-Ju Lee, Kuanchin Chen, J. Michael Tarn and Duyen-Vi Dang, Hotel Recommendation System Based on Review Sentiment and Contextual Information: A Collaborative Filtering Approach, The 20th Pacific Asia Conference on Information Systems (PACIS 2016), Chiayi, Taiwan, 2016. (MOST 104-2410-H-194-070-MY3)</p>
+									&#8226; Chih-Fong Tsai, Wei-Chao Lin, Ya-Han Hu, The Effect of Region Segmentation on Object Categorization, IEEE International Conference on Signal Processing, Communications and Computing (ICSPCC2016), Hong Kong, China, 2016.</p>
+									&#8226; Yi-Lien Lee, Ya-Han Hu, Connected Health Promoting Activities With the LINE App, 24th International Conference on Health Promoting Hospitals and Health Services, New Haven, Connecticut, USA, 2016.</p>
+								<h4>★ 2015 ★</h4>
+								<p>&#8226; Ya-Han Hu, Kuanchin Chen, J. Michael Tarn, Predicting the helpfulness of online hotel reviews, 2015 Annual Meeting of the Decision Sciences Institute, Seattle, Washington, USA, 2015. (in abstract)</p>
+								   &#8226; Mao-Te Chuang, Ya-Han Hu, Chih-Fong Tsai, Chia-Lun Lo, Wei-Chao Lin, The Identification of Prolonged Length of Stay for Surgery Patients, 2015 IEEE International Conference on Systems, Man, and Cybernetics, Hong Kong, China, 2015.</p>
+								<h4>★ 2014 ★</h4>
+								<p>&#8226; 曾于芳、蔡昇村、 羅家倫、 胡雅涵(May, 24, 2014)"腦中風患者復健治療的成效之研究－健保資料庫為例 ", 國際資訊管理研討會(ICIM 2014), 中興大學，台中。</p>
+								&#8226; Chia-Lun Lo, Chia-En Liu, Ya-Han Hu, Mei-Tsu Chen; (May, 22-24, 2014)"A Study of the Cause of Hospitalized Patients' Falls for the purpose of Creating a Safe and Friendly Environment"; 22 st International conference on Health Promoting Hospitals and Health Services, Barcelona, Spain.</p>
+								&#8226; Mao-Te Chuang, Chia-Lun Lo, Yan-Han Hu, Mei-Tsu Chen; (May, 22-24, 2014)" Health Promotion and Surgical Risk Preventive Services in the Elderly Patients"; 22 st International conference on Health Promoting Hospitals and Health Services, Barcelona, Spain.</p>
+								&#8226; Hao-Ting Pai, Fan Wu, Ya-Han Hu, A Highly Parallel-able Method for Discovering Frequent Itemsets, 40th International Conference on Current Trends in Theory and Practice of Computer Science (SOFSEM 2014), Nový Smokovec, High Tatras, Slovakia, 2014.</p>
+								&#8226; Kang Ernest Liu, Ya-Han Hu, Chia-Lun Lo, Predicting Unexpected Returns of a Pediatric Patient within 72 Hours, 43th Annual Meeting of Western Decision Sciences Institute (WDSI 2014), Napa, CA, USA, 2014.</p>
+								<h4>★ 2013 ★</h4>
+								<p>&#8226; Mao-Te Chuang , Chia-Lun Lo, Ya-Han Hu, Predicting the Surgical Risk of General Surgery Patients: A Supervised Learning Approach, The 14th China–Japan–Korea Joint Symposium on Medical Informatics (CJKMI 2013), Kobe, Hyogo, Japan, 2013.</p>
+								&#8226; Chia Lun Lo, Jianntugy Wu, Ya-Han Hu, I-Chiu Chang, Supervised Learning for Predicting Prognosis in Patients withRheumatoid Arthritis, The 14th China–Japan–Korea Joint Symposium on Medical Informatics (CJKMI 2013), Kobe, Hyogo, Japan, 2013.</p>
+								&#8226; 謝宛芷、胡雅涵，運用文字探勘技術於資安事件之自動化分類，Cyberspace 2013 鑑識會計與個人資料保護國際論壇，嘉義，台灣，2013。</p>
+								&#8226; 蔡楚凡、羅家倫、胡雅涵，運用監督式學習技術找出老人非計畫性重返急診模式，國際台灣醫學資訊聯合研討會，台北，台灣，2013。</p>
+								&#8226; Chih-Fong Tsai, Zong-Yao Chen, Jiu-Sheng Chou, Ya-Han Hu, Comparisons of Image Feature Represenations for Pseudo Relevance Feedback, 2013 International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS 2013), Naha, Okinawa, Japan, 2013.</p>
+								&#8226; 黃婌華、葉芳枝、胡雅涵、羅家倫，"利用模式樹預測影響血液透析病患清除率因子之探討"，第廿九次護理研究論文發表會暨兩岸護理學術交流，台中，台灣，2013。</p>
+								&#8226; Fang-I Chen, Chia-Lun Lo, I-Chiu Chang, Ya-Han Hu, Establishing A Bi-directional Personal Healthcare Record Service with NFC Technology, 15th International Conference on Electronic Commerce (ICEC 2013), Turku, Finland, 2013. (EI)</p>
+								&#8226; 張珮竽、羅家倫、胡雅涵，"建構一個具有個人化特色之用藥評估系統"，第八屆國際健康資訊管理研討會，嘉義，台灣，2013。</p>
+								&#8226; 羅家倫、胡雅涵、周致中，"以服務為導向架構建構一個全人理念之長期照護資訊系統"，第八屆國際健康資訊管理研討會，嘉義，台灣，2013。</p>
+								&#8226; Chia-Lun Lo, Ya-Han Hu, I-Chiu Chang, The Relationship of Common Sense in Health-care, Daily Self-care ability, Calculation of figures with physiological and psychological Health Status – An Empirical Study on Adult Diabetic Patients, 22nd International conference on Health Promoting Hospitals and Health Services (HPH 2013), Gothenburg, Sweden, 2013.</p>
+								&#8226; Fang-I Chen, Chia-Fang Tsai, Ya-Han Hu, Chia-Lun Lo, Ching-Chi Yang, A Case Study on the Association between the Health Promotion and Job Stress of a Health Promotion Hospital in Southern Taiwan, 22nd International conference on Health Promoting Hospitals and Health Services (HPH 2013), Gothenburg, Sweden, 2013.</p>
+								&#8226; Yi-Hsien Su, Chia-En Liu, Ya-Han Hu, Chia-Lun Lo, Ching-Chi Yang, Shing-Li Lee, Yu-Chen Wei, To explore the Current situation of the Exercise Behaviors of Medical Workplace Employees and Their Intentions to be Involved in the Activities of Health Promotion” , The 22nd International conference on Health Promoting Hospitals and Health Services (HPH 2013), Gothenburg, Sweden, 2013.</p>
+								&#8226; Fang-I Chen, Chia-Fang Tsai, Ya-Han Hu, Chia-Lun Lo, Yu-Yin Lin, Ching-Chi Yang, The Analysis of Exploring the Effectiveness of Health Point Records for the Employees of A Health Promoting Hospital, The 22nd International conference on Health Promoting Hospitals and Health Services (HPH 2013), Gothenburg, Sweden, 2013.</p>
+								&#8226; Chia-En Liu, Ya-Han Hu, Chia-Lun Lo, To Explore the Influences of the Environment of Medical Workplace to Employee Retention- A Case Study of a Health Promotion Hospital in Southern Taiwan, The 22nd International conference on Health Promoting Hospitals and Health Services (HPH 2013), Gothenburg, Sweden, 2013.</p>
+								<h4>★ 2012 ★</h4>
+								<p>&#8226; Hsu-Che Wu, Ya-Han Hu, Yen-Hao Huang, A comparison of hybrid neuron network models for credit risk prediction, International Conference on Technology, Innovation, and Industrial Management (TIIM 2012), Lublin, Poland, 2012.</p>
+								&#8226; Shin-Yuan Hung, Chin-Shyh Ou, Ya-Han Hu, Kuanchin Chen, Michael Tarn, Chun-Chuan Lu, The Influence of Information Technology Investment on Business Performance: A Comparative Study of Regression Analysis and Artificial Neural Networks, 41st Annual Meeting of Western Decision Sciences Institute (WDSI 2012), Big Island, Hawaii, 2012.</p>
+								&#8226; Ya-Han Hu, Chia-Lun Lo, Kang Liu, Adequacy of Using Wafarin among Elderly Inpatients, 41st Annual Meeting of Western Decision Sciences Institute (WDSI 2012), Big Island, Hawaii, 2012.</p>
+								&#8226; 陳珮玲、劉詩彬、謝汝敦、余宏政、胡雅涵、阮金聲，運用資料探勘技術預測台灣老年男性雄激性缺乏症，第七屆第二次會員大會暨第37次學術演講會，嘉義，台灣，2012。</p>
+								&#8226; 邱詩涵、羅家倫、胡雅涵、吳淑梅，應用資料探勘於患有糖尿病透析患者之存活預測，台灣健康照護聯合學術研討會，台北，台灣，2012。</p>
+								&#8226; 童彙婷、羅家倫、胡雅涵，建立企圖自殺者再次自殺預測模式之研究，國際台灣醫學資訊聯合研討會，台北，台灣，2012。</p>
+								&#8226; 羅家倫、邱瓊萱、石崇良、胡雅涵，健康知能程度與生活品質之關係－以糖尿病患者為例，第七屆國際健康資訊管理研討會，台南，台灣，2012。
+</p>
+								<h4>★ 2011 ★</h4>
+								<p>&#8226; 吳淑梅、羅家倫、胡雅涵，資料探勘技術應用於具周邊動脈疾病之透析病患之研究，第十七屆資訊管理暨實​務研討會，台南，台灣，2011。</p>
+								&#8226; Fan Wu, Ya-Han Hu, Ping-Rong Wang, Feng-I Chung, Chia-Lun Lo, Decision Support in Library Book Acquisition: a Social Computing-based Approach, The 8th IEEE International Conference on e-Business Engineering, Beijing, China, 2011. (EI)</p>
+								&#8226; Ya-Han Hu, Yu-Hua Kao, Mining Sequential Patterns With Consideration to Recency, Frequency, and Monetary, The 15th Pacific Asia Conference on Information Systems (PACIS 2011), Brisbane, Australia, 2011. (NSC99-2410-H-194-065)</p>
+								&#8226; Ya-Han Hu, In-Chi Chiang, Mining Cyclic Patterns with Multiple Minimum Repetition Supports, The 8th International Conference on Fuzzy Systems and Knowledge Discovery (FSKD’11), Shanghai, China, 2011. (EI) (NSC100-2410-H-194-024-MY2)</p>
+								&#8226; Fan Wu, Hao-Ting Pai, Xinxin Zhu, Pei-Yun Hsueh, Ya-Han Hu, Dynamic Access Control for Secure Group Communication in Wireless Sensor Networks, 8th International Conference on Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology, Khon Kaen, Thailand, 2011. (EI)</p>
+								&#8226; 戴俊典、羅家倫、胡雅涵、鄭奕帝，應用決策樹演算法於Warfarin劑量適當性之研究，健康照護聯合學術研討會，台北，台灣，2011。</p>
+								&#8226; 羅家倫、鍾峰宜、胡雅涵，結合雲端架構之院間整合呼吸照護(IDS)創新服務模式，第六屆國際健康資訊管理研討會，彰化，台灣，2011。</p>
+								&#8226; 鍾峰宜、羅家倫、胡雅涵，植基於雲端架構之具可攜式個人化遠距照護服務模式之研究，第六屆國際健康資訊管理研討會，彰化，台灣，2011。</p>
+								&#8226; 戴俊典、羅家倫、胡雅涵，資料探勘技術於用藥劑量決策之研究，第六屆國際健康資訊管理研討會，彰化，台灣，2011。</p>
+								<h4>★ 2010 ★</h4>
+								<p>&#8226; Ya-Han Hu, Fan Wu, Tzu-Wei Yeh, Considering RFM-Values of Frequent Patterns in Transactional Databases, The 2nd International Conference on Software Engineering and Data Mining, Chengdu, China, 2010. (EI)</p>
+								&#8226; Ya-Han Hu, Fan Wu, Chieh-I Yang, Mining Multi-level Time-interval Sequential Patterns in Sequence Databases, The 2nd International Conference on Software Engineering and Data Mining, Chengdu, China, 2010. (EI)</p>
+								&#8226; Ya-Han Hu, Fan Wu, Yi-Chun Liao, Sequential Pattern Mining with Multiple Minimum Supports: a Tree Based Approach, The 2nd International Conference on Software Engineering and Data Mining, Chengdu, China, 2010. (EI) (NSC 98-2410-H-194-054)</p>
+								<h4>★ 2009 ★</h4>
+								<p>&#8226; Fan Wu, Ya-Han Hu, and Tz Ke Wu, A Novel and Efficient Distributed Data Mining Algorithm Based on Frequent Pattern-Tree, The 5th International Conference on Data Mining, Las Vegas, Nevada, USA, 2009.</p>
+								&#8226; Fan Wu, Ya-Han Hu, Che-Wei. Yang, Distributed Frequent Pattern Mining Using Time-Slice Method, The 5th International Conference on Data Mining, Las Vegas, Nevada, USA, 2009.</p>
+								&#8226; Fan Wu, Ya-Han Hu, Kai-Chung Pai, Linked List Based High Utility Itemsets Mining Using Pattern Growth Method, The 5th International Conference on Data Mining, Las Vegas, Nevada, USA, 2009.</p>
+								<h4>★ 2007 ★</h4>
+								<p>&#8226; Ya-Han Hu, Yen-Liang Chen*, and Er-Hsuan Lin (2007), Classification of Time-Sequential Attributes by Using Sequential Pattern Rules, The 3rd International Conference on Natural Computation and the 4th International Conference on Fuzzy Systems and Knowledge Discovery, Haikou, Hainan, China. (EI)</p>
+								<h4>★ 2004 ★</h4>
+								<p>&#8226; Yen-Liang Chen* and Ya-Han Hu (2004), The consideration of recency and compactness in sequential pattern mining, Proceedings of the Second Workshop on Knowledge Economy and Electronic Commerce, National Central University, Taiwan.
+</p>
+								<h4>★ 2003 ★</h4>
+								<p>&#8226; Ya-Han Hu* and Yen-Liang Chen (2003), An efficient algorithm for discovering and maintenance of frequent patterns with multiple minimum supports, International Conference on Information Management , National Chung Cheng University, Taiwan.</p>
+								<h4>★ 2002 ★</h4>
+								<p>&#8226; Yen-Liang Chen*, Mei-Ching Chiang, and Ya-Han Hu (2002), Mining Time-Interval Relationships in Sequential patterns, Taipei Data Mining Conference, National Central University, Taiwan.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+<!-- 珮如期刊論文 -->				
+								<!-- Modal -->
+			    <div class="modal fade" id="myModal7" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4>★ 2016 ★</h4>
+								<p>&#8226; Ya-Han Hu, Kuanchin Chen, Pei-Ju Lee (accepted 2016, Dec). The Effect of User Controllable Filters on the Prediction of Online Hotel Reviews. Information and Management. (In Press) (SCI)</p>
+								&#8226; Peng-Sheng You, Pei-Ju Lee, Yi-Chih Hsieh (accepted 2016, Nov). An artificial intelligent approach to the bicycle repositioning problems, Engineering Computations. (In Press) (SCI)</p>
+								&#8226; Pei-Ju Lee, Peng-Sheng You, Yu-Chih Huang, Yi-Chih Hsieh (accepted 2016, Nov). Inconsistency detection and data fusion in USAR task, Engineering Computations. (In Press) (SCI)</p>
+								&#8226; Pei-Ju Lee, Yi-Chih Hsieh, Yung-Cheng Lee (2016, Dec). Active Inconsistency Detection in Data Integration. ICIC Express Letters, 10(12), 2829-2835. (EI)</p>
+								&#8226; Yi-Chih Hsieh, Pei-Ju Lee, Peng-Sheng You (2016, Sep) An approximated linear programming approach for media resource allocation problem. ICIC Express Letters, 7(9), 1945-1959. (EI)</p>
+								<h4>★ 2015 ★</h4>
+								<p>&#8226; Yung-Cheng Lee, Pei-Ju Lee (2015, May). Cryptanalysis of Ahirwal-Sonwanshi Id-Based Remote User Authentication Scheme. Applied Mechanics and Materials. (EI).</p>
+								&#8226; Yi-Chih Hsieh, Peng-Sheng You, Pei-Ju Lee, Yung-Cheng Lee (2015, Apr). A novel encoding scheme based evolutionary approach for the bi-objective grid patrol routing problem with multiple vehicles. Scientia Iranica B, 22, 1576-1585. (SCI)</p>
+								<h4>★ 2014 ★</h4>
+								<p>&#8226; Lee, Y., Hsieh, Y., You, P. & Lee, P. (2014) Security Enhancement of User Authentication Scheme for Wireless Sensor Networks. ICIC Express Letters, 2014; 5(2), 327-332. (EI)</p>
+								&#8226; Lee, Y., Hsieh, Y., Lee, P., & You, P. (2014) Improvement of the ElGamal Based Remote Authentication Scheme Using Smart Cards. Journal of Applied Research and Technology, 2014; 12(6), 1063-1072. (SCIE)</p>
+								<h4>★ 2011 ★</h4>
+								<p>&#8226; Scerri, P., Ma, Z., Chien, S., Wang, H., Lee, P., Lewis, M. & Sycara, K. (2011) An Initial Evaluation of Approaches to Building Entry for Large Robot Teams. Journal of Intelligent and Robotic Systems. 2011; 64 (2): 145-159. (SCIE)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal8" role="dialog">
+				    <div class="modal-dialog">
+<!-- 珮如會議論文 -->						
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4>★ 2016 ★</h4>
+								<p>&#8226; Pei-Ju Lee, Vladimir Zadorozhny (2016, Jul). Information Fusion Approach Using Characteristic Linear Systems in Multi-Robot Search and Rescue Task. IEEE International Conference on Information Reuse and Integration, (Pittsburgh, USA).</p>
+								&#8226; Ya-Han Hu, Pei-Ju Lee, Kuanchin Chen, J. Michael Tarn, & Duyen-Vi Dang (2016, June) Hotel Recommendation System Based on Review and Context Information: A Collaborative Filtering Approach. Pacific Asia Conference on Information Systems, (Chiayi, Taiwan).</p>
+								<h4>★ 2015 ★</h4>
+								<p>&#8226; Zadorozhny, V., Lee, P. & Lewis, M. (2015) Collaborative Information Sensemaking for Search and Rescue Missions, Proceedings of the 12th International Conference on Information Systems for Crisis Response and Management, (Kristiansand, Norway).</p>
+								<h4>★ 2011 ★</h4>
+								<p>&#8226; Lee, Pei-Ju; Kolling, Andreas; Wang, Huadong; Chien, Shih-Yi; Lewis, Michael;(2011) Cumulative vs. local models of operator utilization describing an air traffic control task, 2011 IEEE International Conference on Systems, Man, and Cybernetics.</p>
+								&#8226; Lee, Pei-Ju; Kolling, Andreas; Lewis, Michael;(2011) Workload Modeling using Time Windows and Utilization in an Air Traffic Control Task, Proceedings of the Human Factors and Ergonomics Society Annual Meeting.</p>
+								&#8226; Wang, Huadong; Kolling, Andreas; Brooks, Nathan; Owens, Sean; Abedin, Shafiq; Scerri, Paul; Lee, Pei-ju; Chien, Shih-Yi; Lewis, Michael; Sycara, Katia; (2011) Scalable target detection for large robot teams, Proceedings of the 6th international conference on Human-robot interaction.</p>
+								<h4>★ 2010 ★</h4>
+								<p>&#8226; Lee, Pei-Ju; Wang, Huadong; Chien, Shih-Yi; Lewis, Michael; Scerri, Paul; Velagapudi, Prasanna; Sycara, Katia; Kane, Breelyn; (2010) Teams for teams performance in multi-human/multi-robot teams, Proceedings of the Human Factors and Ergonomics Society Annual Meeting.</p>
+								<h4>★ 2009 ★</h4>
+								<p>&#8226; Ma, Zheng; Lee, Peiju; Xu, Ying; Lewis, Mike; Scerri, Paul; (2009) An initial evaluation of approaches to building entry for large robot teams, IEEE International Workshop on Safety, Security & Rescue Robotics.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+        </div>
+		
+<!-- 育秀期刊論文 -->
+               <!-- Modal -->
+				<div class="modal fade" id="myModal37" role="dialog">
+					<div class="modal-dialog">					
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4>★ 2018 ★</h4>
+								<p>&#8226; 1.	Pao-Yun Chao, Yu-Hsiu Lin, Yia-Wun Liang, Sheng-Chieh Kuang, Hsiao-Feng Chang* (2018). An exploration of the knowledge, attitudes, and future intentions to work with older people among hospital personnel in hospital, Ministry of Health and Welfare in central Taiwan (in Chinese). Journal of Medicine and Health, 7(2), 31-44.</p>
+								<h4>★ 2017 ★</h4>
+								<p>&#8226; Yu-Hsiu Lin, Yia-Wun Liang, Hsiao-Feng Chang*(2017). An Exploration of job stressors and burnout among nursing assistants in long-term care facilities (in Chinese). Journal of Medicine and Health, 6(2).</p>
+								&#8226; Yu-Hsiu Lin, Alexander C. McLain, Janice C. Probst, Kevin J. Bennett, Zaina P. Qureshi, Jan M. Eberth (2017). Health-related quality of life among adults 65 years and older in the United States, 2011–2012: a multilevel small area estimation approach. Annals of Epidemiology, 27 (1), 52-58 (SCI, IF=1.439).</p>
+								<h4>2016</h4>
+								<p>&#8226; Yia-Wun Liang, Wen-Yi Chen, Asphodel Yang, Yueh-Hsia Tseng, Hua-Pin Chang, Yu-Hsiu Lin* (2016). Factors affecting the career choices in nursing among Taiwanese nursing students: social cognitive career theory (in Chinese). VGH Nursing, 33(3), 238-248.</p>
+								&#8226; Yu-Hsiu Lin, Jan M. Eberth, Janice C. Probst (2016). Ambulatory Care-Sensitive Condition Hospitalizations among Medicare Beneficiaries. American Journal of Preventive Medicine, 51 (4), 493-501. (SCI, IF=4.527)</p>							
+								<h4>★ 2014 ★</h4>
+								<p>&#8226; Yia-Wun Liang, Wen-Yi Chen, Yu-Hsiu Lin Siang-Yi Su, Ming-Huei Lee, Pao-Yun Chao* (2014). An exploratory analysis of nurses’ multicultural caring competence (in Chinese). Taiwan Journal of Public Health, 33(5), 549-562. (TSSCI, ACI, Impact factor: 0.091)</p>
+								&#8226; Yia-Wun Liang, Hua-Pin Chang, Yu-Hsiu Lin, Long-Yau Lin, Wen-Yi Chen* (2014). Factor affecting adequate prenatal care and the prenatal care visits of immigrant women to Taiwan. Journal of Immigrant and Minority Health, 16(1), 44-52. (SSCI impact factor: 1.164)</P>
+								&#8226; Yia-Wun Liang, Yenping Hsieh, Yu-Hsiu Lin, Wen-Yi Chen* (2014). The impact of job stressors on health-quality of life of nursing assistants in long-term care setting. Geriatric Nursing, 35 (2), 114-119. (SNIP, SJR, Impact factor: 1.200).</p>
+								
+								<h4>★ 2013 ★</h4>
+								<p>&#8226; Shwu-Feng Tsay, Wen-Yi Chen, Yu-Hsiu Lin, Yia-Wun Liang*(2013). Job stressors, work adjustment and intention to level: a study of female nursing assistants in long-term care facilities in Taiwan (in Chinese). Taiwan Journal of Public Health, 32(5), 476-490. (TSSCI, ACI, Impact factor: 0.091)</p>
+								
+								<h4>★ 2012 ★</h4>
+								<p>&#8226; Yia-Wun Liang, Shwu-Feng Tsay, Ying-Lin Cheng, Yu-Hsiu Lin*(2012). Higher or lower? Agreement between self-evaluation and external-evaluation regarding the outcome of nursing home accreditation: an analysis of 2009 nursing home accreditation survey (in Chinese). Taiwan Journal of Public Health, 31(6), 545-555. (TSSCI, ACI, Impact factor: 0.091)</p>
+								&#8226; Shwu-Feng Tsay, Yu-Hsiu Lin, Yia-Wun Liang*(2012). Factors associated with the outcome of accreditation of nursing homes: results from the 2009 Taiwan nursing home accreditation survey (in Chinese). Taiwan Journal of Public Health, 31(4), 24-37. (TSSCI, ACI, Impact factor: 0.091)</p>
+								&#8226; W.-Y. Lin, Ya-Han Hu, and C.-F. Tsai*, Machine Learning in Financial Crisis Prediction: A Survey. IEEE Transactions on Systems, Man and Cybernetics – Part C, 42 (4) (2012) 421-436. (SCI, SSCI) </p>
+								&#8226; Authors comment: Shwu-Feng Tsay, Yu-Hsiu Lin, Yia-Wun Liang*(2012). Authors’ responses: Factors associated with the outcome of accreditation of nursing homes: results from the 2009 Taiwan nursing home accreditation survey (in Chinese). Taiwan Journal of Public Health, 31(4), 40. (TSSCI, ACI, Impact factor: 0.091)</p>
+								
+								<h4>★ 2011 ★</h4>
+								<p>&#8226; Yia-Wun Liang, Wen-Yi Chen, Yu-Hsiu Lin, Jwo-Leun Lee, Hsiao-Feng Chang* (2011). A literature review of preventable hospitalizations: implications for primary care in Taiwan (in Chinese). Taiwan Journal of Public Health, 30(5), 409-421. (TSSCI, ACI, Impact factor: 0.091)</p>
+								&#8226; Su-Mei Wang, Yu-Hsiu Lin, Jwo-Leun Lee, Wen-Yi Chen, Yia-Wun Liang*(2011). Correlations between demographic characteristics and healthcare needs among new female immigrants in Taiwan (in Chinese). Cheng Ching Medical Journal, 7(1), 19-31.</P>
+								
+								<h4>★ 2010 ★</h4>
+								<p>&#8226; Yia-Wun Liang, Li-Fan Liu, Yu-Hsiu Lin*(2010). The long-term care systems in the United Kingdom and Japan: a lesson for Taiwan (in Chinese). The Journal of Long Term Care, 14(3), 311-324.</p>
+                                   &#8226; Su-Ling Liao, Hung Chen, Yu-Hsiu Lin, Yia-Wun Liang*(2010). Association between job strain and intention to leave among employees of the high technology microelectronic industry using demand-control0support model (in Chinese). Journal of Central & Southern Medical Alliance, 3(2), 1-12.</p>
+                                   &#8226; Yia-Wun Liang, Wen-Yi Chen, Jwo-Leun Lee, Chi-Hsuan Lung, Yu-Hsiu Lin*. (2010). Effects of Area Deprivation and Parents Socioeconomic Position on New Female Immigrant Children Health Status (in Chinese). The Journal of Health Science, 12(2), 82-95.</P>
+								   &#8226; Hsiao-Feng Chang, Yu-Hsiu Lin, Su-Mei Wang, Yu-Hua Jao, Hsin-Pei Wu, Yia-Wun Liang* (2010). The study of healthcare workers’ job for stress sources and intention to leave (in Chinese). Cheng Ching Medical Journal, 6(1), 21-31.</p>
+                                <h4>★ 2008 ★</h4>
+								<p>&#8226; Yia-Wun Liang, Jin-Tang Chen, Su-Or Chen, Yi-Hsiu Lee, Chia-Ling Chuang, Yu-Hsiu Lin (2008). The differences between inpatients’ and healthcare personnels’ perceptions about patient safety and the implementation practices (in Chinese). The Journal of Health Science, 10(4), 234-250.</p>
+								   &#8226; 19.	Yia-Wun Liang, Su-Mei Wang*, Jwo-Leun Lee, Yu-Hsiu Lin, Ying-Lin Cheng. (2008). Exploring the factors affecting discharge planning patients’ residing institutional long-term care facilities (in Chinese). The Journal of Health Science, 10(1), 234-250.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		
+		
+<!-- 育秀會議論文 -->		
+		       <div class="modal fade" id="myModal38" role="dialog">
+					<div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4>★ 2018 ★</h4>
+								<p>&#8226; 梁亞文、林育秀*、蘇侰寧（2018）。以重要-表現分析法探討一般護理之家照護服務作業標準化項目之重要性與需要性。台灣公共衛生學會、台灣流行病學學會、台灣事故傷害預防與安全促進學會、台灣癌症登記學會、台灣健康保險學會2018年聯合年會。台中，10月13日-14日，2018。</p>
+								<h4>★ 2017 ★</h4>
+								<p>&#8226; 梁亞文、趙堡蕓、張曉鳳、林育秀*（2017）。An Exploration of the Attitudes, Knowledge, and Future Intentions to Work with the Elderly among Hospital Employees in a Regional Hospital。台灣整合照護學會第二屆第二次會員代表大會暨學術研討會。台北，11月5日，2017。(The Best Oral Presentation Award (The Second Place))</p>
+								&#8226; 張曉鳳、林育秀、梁亞文、趙堡蕓*（2017）。醫院員工老化知識對高齡者態度的影響。台灣公共衛生學會、台灣流行病學學會、台灣事故傷害預防與安全促進學會、台灣癌症登記學會、台灣健康保險學會2017年聯合年會。高雄，10月28日-29日，2017。</p>
+								&#8226; 4.	Yia-Wun Liang, Yu-Hsiu Lin* (2017). An exploration of job stressors and burnout among nursing assistants. The 3rd International Conference on Public Health 2017. Kuala Lumpur, Malaysia, Jul 27-29.</p>								
+								<h4>★ 2016 ★</h4>
+								<p>&#8226; Yu-Hsiu Lin*, Janice C. Probst, Jan M. Eberth, Kevin J. Bennett, Zaina Qureshi (2016). County-Level Area Deprivation and Health-Related Quality of Life among Older Adults in the United States: A Multilevel, Post-Stratification Approach. 2016 American Public Health Association Annual Research Meeting and Exposition. Denver, Oct 29-Nov 2.</p>
+								&#8226; Yu-Hsiu Lin*, Hung-Che Chiang (2016). How healthy they are? U.S. older adults’ general health-related quality of life: a small area estimations. 2016 Healthy Cities and Living Conference. Tainan, Taiwan, July 4-7.</p>								
+								<h4>★ 2015 ★</h4>
+								<p>&#8226; Kevin J. Bennett, Janice C. Probst, Yu-Hsiu Lin* (2015). Health resources changed by rurality and region: from 2000 to 2010. 2015 American Public Health Association Annual Research Meeting and Exposition. Chicago, Oct 31-Nov 4. (Travel Funding Award: The Graduate School Travel Grant award, University of South Carolina)</p>
+								&#8226; Kevin J. Bennett*, Yu-Hsiu Lin (2015). Association between rural demography changes and health care resource availability. 2015 American Public Health Association Annual Research Meeting and Exposition. Chicago, Oct 31-Nov 4. (Travel Funding Award: The Graduate School Travel Grant award, University of South Carolina)</p>
+								&#8226; Yia-Wun Liang*, Yu-Hsiu Lin, Hsiao-Feng Chang (2015). Effects of Continuity of care on emergency department use and non-urgent emergency department visits among the elderly in Taiwan. 2015 American Public Health Association Annual Research Meeting and Exposition. Chicago, Oct 31-Nov 4. (Travel Funding Award: The Graduate School Travel Grant award, University of South Carolina)</p>
+								&#8226; Yu-Hsiu Lin*, Jan M. Eberth, Janice C. Probst (2015). Rurality and ambulatory care sensitive conditions (ACSCs) hospitalizations among Medicare Beneficiaries in the United States. The 40th Anniversary Celebration of the Arnold School of Public Health. Columbia, SC, October 9.</p>
+								&#8226; Yu-Hsiu Lin*, Jan M. Eberth, Janice C. Probst (2015). The Association between Primary Care Physician Density and Ambulatory Care Sensitive Conditions Hospitalizations for Medicare Beneficiaries. 2015 National Conference on Health Statistics. North Bethesda, MD, August 24-26. (Exceptional Student Research Award)</p>
+								&#8226; Kevin J. Bennett, Janice C. Probst, Yu-Hsiu Lin* (2015). Changes in rural health care resource availability, 2000-2010. 2015 AcademyHealth Annual Research Meeting. Minneapolis, June 14-16. (Travel Funding Award: Dean’s Student Travel Award, Arnold School of Public Health, University of South Carolina)</p>
+								&#8226; Yu-Hsiu Lin*, Janice C. Probst, Kevin J. Bennett, Yia-Wun Liang (2015). Area deprivation, area health resources and pediatric ambulatory care sensitive conditions hospitalization: a multilevel analysis. 2015 AcademyHealth Annual Research Meeting. Minneapolis, June 14-16. (Travel Funding Award: Dean’s Student Travel Award, Arnold School of Public Health, University of South Carolina)</p>
+								&#8226; Yia-Wun Liang, Yu-Hsiu Lin, Pao-Yun Chao* (2015). Multicultural caring competence among nurses in Taiwan. 2015 AcademyHealth Annual Research Meeting. Minneapolis, June 14-16. (Travel Funding Award: Dean’s Student Travel Award, Arnold School of Public Health, University of South Carolina)</p>
+                                <h4>★ 2014 ★</h4>
+                                <p>&#8226;Janice C. Probst, Yia-Wun Liang, Yu-Hsiu Lin* (2014). Factors Associated with Preventable Hospitalizations among Older Adults. 2014 AcademyHealth Annual Research Meeting. San Diego, June 8-10. </p>
+                                <h4>★ 2013 ★</h4>
+                                <p>&#8226;Yia-Wun Liang, Janice C. Probst, Hongmei Zhang, Yu-Hsiu Lin* (2013). Why are they leaving? Factors affecting intention to leave among long-term care facilities nursing assistants in Taiwan. 2013 AcademyHealth Annual Research Meeting. Baltimore, June 23-25. (Travel Funding Award: Dean’s Student travel award, Arnold School of Public Health, University of South Carolina)</p>
+                                <h4>★ 2011 ★</h4>
+								<p>&#8226; Shwu-Feng Tsay, Mei-Nah Hwang, Yu-Hsiu Lin, Yia-Wun Liang*(2011). Agreement between Self-evaluation and External-evaluation on Nursing Home Accreditation Status: Analysis of 2009 Nursing Home Accreditation Database (in Chinese). 2011 Taiwan Public Health Association Annual Meeting. Taipei, Taiwan. Oct 15-16, 2011.</p>
+								&#8226; 18.	Yia-Wun Liang, Yu-Hsiu Lin, Wen-Yi Chen* (2011). On relationship between hospital nurse staffing and patient mortality in Taiwan. 28th AcademyHealth Annual Research Meeting-The premier forum for health services research. Seattle, June 12-14, 2011</p>
+								<h4>★ 2010 ★</h4>
+								<p>&#8226; Yia-Wun Liang, Jwo-Leun Lee, Li-Chi Huang, Yu-Hsiu Lin, Wen-Yi Chen* (2010). Nurse Staffing, Direct Care Hours to Patients and Patient Mortality in Taiwan. 27th AcademyHealth Annual Research Meeting-The premier forum for health services research. Boston, June 27-29, 2010.</p>
+								&#8226; Yia-Wun Liang, Wen-Yi Chen, Chi-Hsuan Asphodel Yang, Hua-Pin Chang, Yu-Hsiu Lin* (2010). Prenatal care utilization for foreign bribes before enrolling in the NHI program and the influencing factors of prenatal care services. 27th AcademyHealth Annual Research Meeting-The premier forum for health services research. Boston, June 27-29, 2010.</p>
+								&#8226; Hsiao-Feng Chang, Yu-Hsiu Lin, Pao-Yun Chao, Yia-Wun Liang* (2010). The study of healthcare workers’ job stress sources and intention to leave. 27th AcademyHealth Annual Research Meeting-The premier forum for health services research. Boston, June 27-29, 2010.</p>
+								&#8226; Yia-Wun Liang, Yu-Hsiu Lin, Pao-Yun Chao, Pei-Chung Lai, Han-Chen Tseng*(2010). An exploration of the relationship between metabolic syndrome and fatty liver among the elders (in Chinese). 2010 Yu-Shan Association Annual Meeting. Hsin-Chu, May 16, 2010.</p>
+								&#8226; Chin-Hsing Chen, Chin-Chih Ho, Yia-Wun Liang, Yu-Hsiu Lin, Pao-Yun Chao*(2010). Prevalence and risk factors of metabolic syndrome: analysis of self-paid health examination database in Taichung City (in Chinese). 2010 Yu-Shan Association Annual Meeting. Hsin-Chu, May 16, 2010.</p>
+								&#8226; Chi-Hsuan Asphodel Yang, Wen-Miao Liu, Yia-Wun Liang, Yu-Hsiu Lin, Feng Hui-Ching*(2010). The impact of relationship marketing on customer satisfaction and loyalty -An empirical study of medical imaging healthcare center (in Chinese). 2010 Yu-Shan Association Annual Meeting. Hsin-Chu, May 16, 2010.</p>
+								&#8226; Hsiao-Feng Chang, Pao-Yun Chao, Yu-Hsiu Lin*(2010). Cultural Competence in Nursing Students (in Chinese). 2010 Yu-Shan Association Annual Meeting. Hsin-Chu, May 16, 2010.</p>
+								&#8226; Chi-Hsuan Asphodel Yang, Yu-Hsiu Lin, Li-Chi Huang, Jwo-Leun Lee, Yia-Wun Liang* (2010). Cultural competence among nursing students at 2 different educational programs. 2010 The 2nd International Conference: Focus on Cross-Cultural and Interdisciplinary  Healthcare. Taichung, Taiwan, May 14-15, 2010.</p>		
+								<h4>★ 2009 ★</h4>
+								<p>&#8226; Hsiao-Feng Chang, Wen-Yi Chen, Jwo-Leun Lee, Yu-Hsiu Lin, Yia-Wun Liang *, Wen-Ta Yang (2009). The impact of hospital beds on ambulatory care sensitive conditions in Taiwan (in Chinese). 2009 Taiwan Public Health Association Annual Meeting. Taipei, Taiwan. Dec 5-6, 2009.</p>
+								&#8226; Yia-Wun Liang, Jwo-Leun Lee, Wen-Yi Chen, Long- Yau Lin、Fen-Ju Chen, Li-Chi Huang, Chi-Hsuan Lung, Yu-Hsiu Lin* (2009). Prenatal care utilization for foreign bribes before enrolling in the NHI program and the influencing factors of prenatal care services (in Chinese). 2009 Taiwan Public Health Association Annual Meeting. Taipei, Taiwan. Dec 5-6, 2009.</p>
+								&#8226; Yia-Wun Liang, Chin-Chih Ho, Hsiao-Feng Chang, Pao-Yun Chao,Pin-Yu Liu, Yu-Hsiu Lin*(2009). The study of the correlation between work stress, health outcome and intention to leave in healthcare workers (in Chinese). 2009 Taiwan Joint Conference in Health Care. Taipei, Taiwan. Jul 10, 2009.</p>	
+								&#8226; Chin-Chih Ho, Fen-Ju Chen, Ling-Na Sung, Yu-Hsiu Lin, Hsiao-Feng Chang, Pao-Yun Chao, Yia-Wun Liang*(2009). The study of the correlation between work stress, health outcome and intention to leave in nursing staff (in Chinese). 2009 Innovating of Health Industry and Visioning of Long-term Care in Taiwan. Taichung, Taiwan. May 15, 2009。</p>								
+								&#8226; Chia-Ling Chuang*, Yia-Wun Liang, Jwo-Leun Lee, Wen-Yi Chen, Chi-Hsuan Asphodel Yang, Yu-Hsiu Lin (2009). Nursing staffing and patient outcomes on acute care hospital units. 26th AcademyHealth Annual Research Meeting-The premier forum for health services research. Chicago, June 28-30, 2009. (Travel Funding Award: National Science Council, Taiwan)</p>									
+								&#8226; Yia-Wun Liang, Jwo-Leun Lee, Wen-Yi Chen, Yu-Hsiu Lin, Chia-Ling Chuang, Hsiao-Feng Chang* (2009). Is the more the better? Primary care physician supply and ambulatory care sensitive conditions hospitalizations in Taiwan’s universal health insurance setting. 26th AcademyHealth Annual Research Meeting-The premier forum for health services research. Chicago, June 28-30, 2009.</p>
+								<h4>★ 2008 ★</h4>
+								<p>&#8226; Yia-Wun Liang, Wan-Li Chen, Wei-San Tang, Pei-Wun Lin, Ya-Yun Siao, Bi-Hua Wang, Yu-Hsiu Lin. (2008). The study of the correlation between work stress, health outcome and intention to leave in a high technology microelectronic company (in Chinese). Taiwan Public Health Association Annual Meeting. Taipei, Taiwan. Oct 4-5, 2008.</p>
+								&#8226; Yia-Wun Liang, Yu-Hsiu Lin*, Jwo-Leun Lee, Chi-Hsuan Lung, William S. Pearson. Area Deprivation, Parents’ Socioeconomic Position and New Female Immigrant Children Health Status in Taiwan. 25th AcademyHealth Annual Research Meeting-The premier forum for health services research. Washington, DC, June 8-10, 2008. (Travel Funding Award: National Science Council, Taiwan)</p>								
+								<h4>★ 2007 ★</h4>
+								<p>Yia-Wun Liang, Ching-Fang Cheng, Chaio-Yun Yen, Yi-Yu Huang, Yi-Hsiu Lin, Pei-Yi Shiao, Ching-Wen Tseng, Yu-Hsiu Lin. (2007). Patient Characteristics and Socioeconomic Status with Preventable Hospitalization -Using National Health Insurance Research Database (in Chinese). Taiwan Public Health Association Annual Meeting. Taichung, Taiwan. Oct 6-7, 2007.</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+	
+
+
+
+
+
+
+
+
+	
+		
+		<div class="col-md-6 col-sm-6 egrid">
+			<div class="textt">
+			    <h3>期刊論文推薦</h3>
+				<label class="eline"></label>
+				<h3>推薦期刊</h3>
+				<a href="#" data-toggle="modal" data-target="#myModal9">[文獻蒐集網站]</a>
+				<a href="#" data-toggle="modal" data-target="#myModal10">[相關網站]</a>
+				<a href="#" data-toggle="modal" data-target="#myModal11">[DM相關]</a>
+				<a href="#" data-toggle="modal" data-target="#myModal12">[旅遊相關]</a>
+				<a href="#" data-toggle="modal" data-target="#myModal13">[醫療相關]</a>
+				<!-- Modal -->
+			    <div class="modal fade" id="myModal9" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="http://www.sciencedirect.com/" target="_blank" ><h4>Science Direct</h4></a>
+								<a href="http://ieeexplore.ieee.org/Xplore/home.jsp?reload=true" target="_blank" ><h4>IEEE Xplore</h4></a>
+								<a href="https://ethics.nctu.edu.tw/" target="_blank" ><h4>台灣學術倫理教育中心</h4></a>
+								<a href="https://scholar.google.com.tw/" target="_blank" ><h4>Google 學術搜尋</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+								<div class="modal fade" id="myModal10" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="http://www.lib.ccu.edu.tw/" target="_blank" ><h4>圖書館</h4></a>
+								<a href="http://www.colmgt.ccu.edu.tw/colmgt/" target="_blank" ><h4>中正管院</h4></a>
+								<a href="http://www.mis.ccu.edu.tw/" target="_blank" ><h4>中正資管網頁</h4></a>
+								<a href="http://140.123.13.16/sub01/lv2/form_download.php" target="_blank" ><h4>新生服務網站</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal11" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://www.journals.elsevier.com/decision-support-systems/" target="_blank" ><h4>Decision Support Systems</h4></a>
+								<a href="http://www.journals.elsevier.com/expert-systems-with-applications/" target="_blank" ><h4>Expert Systems with Applications</h4></a>
+								<a href="http://www.journals.elsevier.com/applied-soft-computing/" target="_blank" ><h4>Applied Soft Computing</h4></a>
+								<a href="https://www.journals.elsevier.com/neurocomputing/" target="_blank" ><h4>Neurocomputing</h4></a>
+								<a href="http://www.journals.elsevier.com/knowledge-based-systems/" target="_blank" ><h4>Knowledge-Based Systems</h4></a>
+								<a href="https://www.journals.elsevier.com/information-systems/" target="_blank" ><h4>Information Systems</h4></a>
+								<a href="https://www.journals.elsevier.com/information-processing-and-management/" target="_blank" ><h4>Information Processing & Management</h4></a>
+								<a href="http://www.journals.elsevier.com/computers-in-human-behavior/" target="_blank" ><h4>Computers in Human Behavior</h4></a>
+								<a href="http://link.springer.com/journal/10618" target="_blank" ><h4>Data & Knowledge Engineering</h4></a>
+								<a href="http://www.journals.elsevier.com/electronic-commerce-research-and-applications/" target="_blank" ><h4>Electronic Commerce Research and Applications</h4></a>
+								<a href="https://www.computer.org/web/tkde" target="_blank" ><h4>IEEE Transactions on Knowledge and Data Engineering</h4></a>
+								<a href="https://www.journals.elsevier.com/information-fusion/" target="_blank" ><h4>Information Fusion</h4></a>
+								<a href="http://www.journals.elsevier.com/information-sciences/" target="_blank" ><h4>Information Science</h4></a>
+								<a href="http://www.journals.elsevier.com/journal-of-systems-and-software/" target="_blank" ><h4>Journal of Systems and Software</h4></a>
+								<a href="https://www.journals.elsevier.com/journal-of-computer-and-system-sciences/" target="_blank" ><h4>Journal of Computer and System Sciences</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal12" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://www.sciencedirect.com/science/journal/aip/02615177" target="_blank" ><h4>Tourism Management</h4></a>
+								<a href="https://www.journals.elsevier.com/international-journal-of-hospitality-management/" target="_blank" ><h4>International Journal of Hospitality Management</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal13" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://www.journals.elsevier.com/international-journal-of-production-economics/" target="_blank" ><h4>International Journal of Production Economics</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-6 col-sm-6 egrid">
+			<div class="textt">
+			    <h3>相關資源</h3>
+				<label class="eline"></label>
+				<p></p>
+				<a href="#" data-toggle="modal" data-target="#myModal14">實驗室開放平台</a>
+				<a href="#" data-toggle="modal" data-target="#myModal15">重要名詞定義介紹</a>
+				<a href="#" data-toggle="modal" data-target="#myModal16">報帳</a>
+				<a href="#" data-toggle="modal" data-target="#myModal17">好資源分享</a>
+				<a href="#" data-toggle="modal" data-target="#myModal36">資料科學實驗室trello</a>
+				<!-- Modal -->
+			    <div class="modal fade" id="myModal14" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://github.com/DSBDA" target="_blank" ><h4>GitHub 程式分享平台</h4></a>
+								<a href="https://datasciencelab.wikispaces.com/space/content" target="_blank" ><h4>論文分享平台 Wikispaces Classroom</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal15" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://en.wikipedia.org/wiki/Web_crawler" target="_blank" ><h4>[Web Crawler]</h4></a>
+								<a href="https://en.wikipedia.org/wiki/Sentiment_analysis" target="_blank" ><h4>[Sentiment Analysis]</h4></a>
+								<a href="https://en.wikipedia.org/wiki/Data_mining" target="_blank" ><h4>[Data Mining]</h4></a>
+								<a href="https://en.wikipedia.org/wiki/Data_warehouse" target="_blank" ><h4>[Data Warehouse]</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal16" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://miswww1.ccu.edu.tw/parttime/index.php" target="_blank" ><h4>學習暨勞僱時數登錄系統登入</h4></a>
+								<a href="http://miswww1.cc.ccu.edu.tw/pt_proj/index.php" target="_blank" ><h4>兼任助理、臨時工工作日誌登錄系統登入</h4></a>
+								<a href="https://miswww1.ccu.edu.tw/account/index.php" target="_blank" ><h4>會計系統查詢</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal17" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://zh.surveymonkey.com/" target="_blank" ><h4>Survey Monkey免費調查問卷建立平台</h4></a>
+								<a href="https://www.000webhost.com/" target="_blank" ><h4>免費資料庫平台</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal36" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://trello.com/login?returnUrl=%2Fb%2F3LRIjt6l%2F%25E8%25B3%2587%25E6%2596%2599%25E7%25A7%2591%25E5%25AD%25B8%25E5%25AF%25A6%25E9%25A9%2597%25E5%25AE%25A4" target="_blank" ><h4>資料科學實驗室</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-6 col-sm-6 egrid">
+			<div class="textt">
+			    <h3>程式語言教學資源</h3>
+				<label class="eline"></label>
+				<h3>Python語言</h3>
+				<a href="#" data-toggle="modal" data-target="#myModal18">教學網站</a>
+				<a href="#" data-toggle="modal" data-target="#myModal19">教學書籍</a>
+				<a href="#" data-toggle="modal" data-target="#myModal20">其他相關資源分享</a>
+				<h3>Java語言</h3>
+				<a href="#" data-toggle="modal" data-target="#myModal21">教學網站</a>
+				<a href="#" data-toggle="modal" data-target="#myModal22">教學書籍</a>
+				<a href="#" data-toggle="modal" data-target="#myModal23">其他相關資源分享</a>
+				<h3>R語言</h3>
+				<a href="#" data-toggle="modal" data-target="#myModal24">教學網站</a>
+				<h3>Android語言</h3>
+				<a href="#" data-toggle="modal" data-target="#myModal26">教學書籍</a>
+				<a href="#" data-toggle="modal" data-target="#myModal27">其他相關資源分享</a>
+				<h3>HTML語言</h3>
+				<a href="#" data-toggle="modal" data-target="#myModal28">教學網站</a>
+				<h3>JavaScript語言</h3>
+				<a href="#" data-toggle="modal" data-target="#myModal31">教學網站</a>
+				<h3>C#語言</h3>
+				<a href="#" data-toggle="modal" data-target="#myModal34">教學網站</a>
+				<a href="#" data-toggle="modal" data-target="#myModal35">教學書籍</a>
+				<!-- Modal -->
+			    <div class="modal fade" id="myModal18" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://www.youtube.com/playlist?list=PLohb4k71XnPaQRTvKW4Uii1oq-JPGpwWF" target="_blank" ><h4>網路爬蟲實戰教學(Youtube)</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				 <div class="modal fade" id="myModal19" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://goo.gl/tX5LTZ" target="_blank" ><h4>ISBN:9863477311 | Introducing Python: Modern Computing in Simple Packages</h4></a>
+								<a href="http://ppt.cc/XC7J" target="_blank" ><h4>ISBN:9789862760703 | 精通Python 3程式設計(第二版)</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				 <div class="modal fade" id="myModal20" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://codebeautify.org/xmlviewer" target="_blank" ><h4>XML VIEWER</h4></a>
+								<a href="http://www.kaiching.org/2014/07/python-guide.html" target="_blank" ><h4>程式語言教學誌：Python</h4></a>
+								<a href="http://it-easy.tw/netbeans/" target="_blank" ><h4>google擴充</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal21" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://www.youtube.com/playlist?list=PLaYqF7AnyNPcgBe2KPqZsqqqOvlnFvgW_" target="_blank" ><h4>電腦教程 JAVA系列(第1部)最適合初學者入門的JAVA基礎視頻(Youtube)</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal22" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://goo.gl/x7dhJs" target="_blank" ><h4>猛虎出柙雙劍合璧版：最新 OCA / OCP Java SE 7 Programmer 專業認證</h4></a>
+								<a href="https://goo.gl/tQ9NGt" target="_blank" ><h4>Java網路程式設計</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal23" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="http://it-easy.tw/netbeans/" target="_blank" ><h4>[Java]NetBeans強大的軟體開發工具</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal24" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://goo.gl/aNKgsy" target="_blank" ><h4>R 語言入門教學</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal26" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="http://www.books.com.tw/products/0010670089" target="_blank" ><h4>ISBN：9789863121718 | 新觀念 Android 程式設計範例教本：使用 Android Studio</h4></a>
+								<a href="https://taiwan.kinokuniya.com/bw/9789864341207" target="_blank" ><h4>ISBN：9789864341207 | Android 6.0高效入門：深度學習</h4></a>
+								<a href="http://www.books.com.tw/products/0010681485" target="_blank" ><h4>ISBN：9789863122593 | Android App 程式設計教本之無痛起步：使用 Android Studio 開發環境</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal27" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="http://abgne.tw/" target="_blank" ><h4>男丁格爾 工具套件</h4></a>
+								<a href="https://github.com/wasabeef/awesome-android-ui" target="_blank" ><h4>GitHub UI套件程式碼</h4></a>
+								<a href="https://goo.gl/7FEjip" target="_blank" ><h4>UI模擬網頁Android Action Bar Style Generator</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal28" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://goo.gl/iW9d2R" target="_blank" ><h4>Twitchtv一步步教學+練習</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal31" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="https://www.codecademy.com/" target="_blank" ><h4>codecademy</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal34" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="http://kevintsengtw.blogspot.tw/p/aspnet-mvc.html" target="_blank" ><h4>mrkt的程式學習筆記：ASP.NET MVC</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal35" role="dialog">
+				    <div class="modal-dialog">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<a href="http://www.books.com.tw/products/0010677391" target="_blank" ><h4>ASP.NET MVC 5：網站開發美學</h4></a>
+								<a href="http://www.books.com.tw/products/0010677391" target="_blank" ><h4>ASP.NET MVC 5實務專題範例教學</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--// Events Section -->
+<!-- Clients Section -->
+
+<!--// Clients Section -->
+<!-- Contact Section -->
+
+<!-- //Contact Section -->
+<!-- Social Icons Section -->
+<!-- //Social Icons Section -->
+<!-- Footer Section -->
+<div class="footer" id ="footer">
+	<div class="container">
+		<p> &copy; 2017 國立中正大學資料分析暨巨量資料分析實驗室 位置:國立中正大學管理學院四樓413 分機號碼:. All Rights Reserved | Design by <a href="http://dsbda.mis.ccu.edu.tw/">DSBDA</a></p>
+	</div>
+</div>
+<!-- //Footer Section -->
+<!-- js files -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Scripts For Navbar -->
+
+	<script src="js/jquery.scrollTo.min.js"></script>
+
+<!--// Scripts For Navbar -->
+
+<!-- Scripts For Gallery Section -->
+	<script src="js/jquery.localScroll.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/common.js"></script>
+<!--// Scripts For Gallery Section -->
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top,
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
+
+<!-- /js files -->
+<!-- Script For Number Scrolling -->
+	<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+		
+<!-- //Script For Number Scrolling -->
+<script src="js/responsiveslides.min.js"></script>
+			<script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+				// Slideshow 4
+				$("#slider5").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: false,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+							$('.events').append();
+						},
+						after: function () {
+							$('.events').append();
+						}
+					});				
+				});
+			</script>
+</body>
+</html>
